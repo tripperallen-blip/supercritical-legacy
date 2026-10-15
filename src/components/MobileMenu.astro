@@ -44,9 +44,6 @@ function isActive(item: NavItem) {
         </a>
       ))
     }
-    <button type="button" data-open-contact class="py-3 text-left text-sm">
-      Get in touch
-    </button>
   </nav>
 </div>
 
@@ -68,7 +65,7 @@ function isActive(item: NavItem) {
     };
 
     button.addEventListener('click', () => setOpen(panel.hidden));
-    panel.querySelectorAll('a, [data-open-contact]').forEach((link) => {
+    panel.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => setOpen(false));
     });
     document.addEventListener('keydown', (event) => {

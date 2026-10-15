@@ -17,7 +17,7 @@ site:
 
 home:
   heroVideo: "/assets/VIDEO-2026-01-14-12-30-01.mp4"
-  heroLogo: "/assets/SCT-Logo-Horizontal-500-white.webp"
+  heroLogo: "/assets/brand/SCT-Logo-Horizontal-500-white.webp"
   heading: "BUILDING A NEW CATEGORY OF NUCLEAR FUEL INFRASTRUCTURE"
   heroButtons:
     - { label: "News", href: "/news/" }

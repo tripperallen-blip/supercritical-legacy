@@ -7,13 +7,28 @@ const { home, site } = loadPages();
 ---
 
 <Base title={site.defaultTitle} description={home.body[0]} section="home">
-  <section class="border-b border-neutral-200 bg-neutral-50">
-    <div class="mx-auto grid max-w-5xl gap-6 px-4 py-16">
+  <section class="relative isolate flex min-h-[85vh] items-center overflow-hidden bg-neutral-950 text-white">
+    <video
+      class="absolute inset-0 -z-10 h-full w-full object-cover"
+      src={home.heroVideo}
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-hidden="true"
+    ></video>
+    <img
+      src="/assets/extra/video-overlay3.png"
+      alt=""
+      class="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover"
+    />
+    <div class="mx-auto grid w-full max-w-5xl gap-6 px-4 py-16">
+      <img src={home.heroLogo} alt="" class="h-14 w-auto md:h-20" />
       <h1 class="max-w-3xl text-4xl leading-tight md:text-5xl">{home.heading}</h1>
       <div class="flex flex-wrap gap-3">
         {
           home.heroButtons.map((action) => (
-            <a href={action.href} class="border border-neutral-900 px-4 py-2 text-sm">
+            <a href={action.href} class="border border-white px-4 py-2 text-sm">
               {action.label}
             </a>
           ))
