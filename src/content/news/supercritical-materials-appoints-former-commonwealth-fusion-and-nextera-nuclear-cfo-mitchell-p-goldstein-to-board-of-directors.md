@@ -6,7 +6,7 @@ dateline: "AUSTIN, Texas – September 9, 2026"
 featured: true
 ---
 
-SuperCritical Materials Corp (“SuperCritical Materials” or “SUPC”) announced today that Mitchell P. Goldstein has joined its Board of Directors, where he will chair both the Audit and Compensation Committees. SuperCritical Materials is advancing the engineering and commercialization of technology designed to recover uranium from seawater, with the goal of building an entirely new category of nuclear fuel infrastructure.
+**AUSTIN, Texas – September 9, 2026** – SuperCritical Materials Corp (“SuperCritical Materials” or “SUPC”) announced today that Mitchell P. Goldstein has joined its Board of Directors, where he will chair both the Audit and Compensation Committees. SuperCritical Materials is advancing the engineering and commercialization of technology designed to recover uranium from seawater, with the goal of building an entirely new category of nuclear fuel infrastructure.
 
 “Mitch understands the capital discipline, risk management and governance required to build and operate nuclear infrastructure at scale,” said Alexander Canon Bryan, CEO, SuperCritical Materials. “As SuperCritical moves from national-laboratory science, through engineering, and into commercial development, that experience will be increasingly important.”
 
@@ -26,8 +26,6 @@ At Commonwealth Fusion Systems (CFS), Mitch served as CFO during a pivotal perio
 
 SuperCritical Materials is transforming decades of U.S. government seawater-uranium research into a new category of nuclear fuel infrastructure. The company has exclusively licensed selective adsorbent technology capable of capturing uranium from the ocean’s roughly 4.5 billion metric tons of dissolved reserves – enough to support current global reactor fuel demand for tens of thousands of years – and is now advancing the engineering, demonstration and economic validation needed to prove that it can be produced at scale and at competitive cost. Visit www.supercritical.one for more information.
 
-**Media Contact**
-
-Grant Draper
-
+**Media Contact**  
+Grant Draper  
 media@supercritical.one

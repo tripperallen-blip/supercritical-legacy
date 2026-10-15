@@ -9,7 +9,7 @@ dateline: "AUSTIN, Texas – July 24, 2026"
 featured: true
 ---
 
-SuperCritical Materials Corp. (“[SuperCritical](https://supercritical.one/)“), an Austin-based developer of nuclear fuel and critical materials infrastructure, today announced that it has secured an exclusive license from Battelle Memorial Institute (“[Battelle](https://www.battelle.org/laboratory-management)“) to a patented uranium adsorbent technology for the extraction of uranium from seawater originally developed by the Pacific Northwest National Laboratory (PNNL) and research partners. Battelle manages eight national laboratories for the federal government.
+**AUSTIN, Texas – July 24, 2026** – SuperCritical Materials Corp. (“[SuperCritical](https://supercritical.one/)”), an Austin-based developer of nuclear fuel and critical materials infrastructure, today announced that it has secured an exclusive license from Battelle Memorial Institute (“[Battelle](https://www.battelle.org/laboratory-management)”) to a patented uranium adsorbent technology for the extraction of uranium from seawater originally developed by the Pacific Northwest National Laboratory (PNNL) and research partners. Battelle manages eight national laboratories for the federal government.
 
 The technology has demonstrated the feasibility to extract uranium from seawater. SuperCritical has been granted rights to the technology and to deploy it in the United States with the goal of reaching industrial scale and will seek to expand to allied nations.
 
@@ -41,8 +41,6 @@ SuperCritical believes that securing fuel supply and critical material availabil
 
 SuperCritical Materials is developing industrial-scale nuclear fuel production infrastructure utilizing advanced seawater uranium extraction technology originally developed by the U.S. Department of Energy. The Company is focused on expanding future fuel availability for the growing global nuclear energy sector and enabling the energy infrastructure required to support the Intelligence Economy. To learn more, please visit: [www.supercritical.one](https://supercritical.one/)
 
-**Media Contact**
-
-Grant Draper
-
+**Media Contact**  
+Grant Draper  
 media@supercritical.one

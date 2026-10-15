@@ -10,7 +10,12 @@ interface Props {
 const { nav, current, section = '' } = Astro.props;
 
 function isActive(item: NavItem) {
-  return section === item.section || current === item.href;
+  if (current === item.href) return true;
+  if (section === 'news' && item.href === '/news/') return true;
+  if (section === 'team' && item.href === '/our-team/') return true;
+  if (section === 'technology' && item.href === '/technology/') return true;
+  if (section === 'contact' && item.href === '/contact-us/') return true;
+  return false;
 }
 ---
 

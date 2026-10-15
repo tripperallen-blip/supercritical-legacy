@@ -13,8 +13,7 @@ interface Props {
 
 const { title, description, section } = Astro.props;
 const { site } = loadPages();
-const pageTitle = title === site.name ? title : `${title} | ${site.name}`;
-const meta = description ?? site.tagline;
+const meta = description ?? site.defaultTitle;
 ---
 
 <!doctype html>
@@ -24,14 +23,14 @@ const meta = description ?? site.tagline;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={meta} />
     <link rel="icon" href="/favicon.png" />
-    <title>{pageTitle}</title>
+    <title>{title}</title>
   </head>
   <body class="bg-white text-neutral-900">
     <Header nav={site.nav} section={section} />
     <main>
       <slot />
     </main>
-    <Footer text={site.footer} />
+    <Footer text={site.copyright} />
     <ContactModal />
   </body>
 </html>

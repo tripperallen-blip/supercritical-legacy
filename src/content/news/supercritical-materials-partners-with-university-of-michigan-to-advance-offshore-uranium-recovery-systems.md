@@ -6,7 +6,7 @@ dateline: "AUSTIN, Texas, Sept. 22, 2026"
 featured: true
 ---
 
-SuperCritical Materials Corp. (“SuperCritical”), which recently secured an exclusive license to a patented uranium adsorbent technology for extracting uranium from seawater, today announced a research partnership with the University of Michigan to advance the mechanical design, prototyping and testing of offshore uranium recovery systems.
+**AUSTIN, Texas, Sept. 22, 2026** — SuperCritical Materials Corp. (“SuperCritical”), which recently secured an exclusive license to a patented uranium adsorbent technology for extracting uranium from seawater, today announced a research partnership with the University of Michigan to advance the mechanical design, prototyping and testing of offshore uranium recovery systems.
 
 The research will be led by Dr. Maha Haji, Assistant Professor of Mechanical Engineering at the University of Michigan and director of the Symbiotic Engineering and Analysis Laboratory. Dr. Haji’s research focuses on the design and multidisciplinary optimization of offshore systems that sustainably recover energy, water, food and critical minerals from the ocean.
 
@@ -49,8 +49,6 @@ The University of Michigan partnership will support the design and validation wo
 
 SuperCritical Materials is developing industrial-scale nuclear fuel production infrastructure. The Company is focused on expanding future fuel availability for the growing global nuclear energy sector and strengthening U.S. energy security. To learn more, please visit: www.supercritical.one
 
-**Media Contact**
-
-Grant Draper
-
-[media@supercritical.one](mailto:media@supercritical.one)
+**Media Contact**  
+Grant Draper  
+<media@supercritical.one>

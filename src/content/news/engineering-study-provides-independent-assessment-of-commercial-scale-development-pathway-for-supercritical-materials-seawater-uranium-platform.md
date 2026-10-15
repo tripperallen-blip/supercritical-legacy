@@ -6,7 +6,9 @@ dateline: "AUSTIN, Texas, Aug. 26, 2026"
 featured: true
 ---
 
-SuperCritical Materials Corp. (“SuperCritical Materials” or “SUPC”), developer of industrial-scale uranium production infrastructure from seawater, today announced the completion of an independent assessment conducted by global science, technology and engineering leader, Kellogg Brown & Root (KBR).
+**AUSTIN, Texas, Aug. 26, 2026** – SuperCritical Materials Corp. (“SuperCritical Materials” or “SUPC”), developer of industrial-scale uranium production infrastructure from seawater, today announced the completion of an independent assessment conducted by global science, technology and engineering leader, Kellogg Brown & Root (KBR).
+
+The review evaluated SUPC’s uranium extraction platform, deployment architecture, offshore operating concepts, uranium recovery flowsheet, commercialization pathway, and key engineering requirements necessary for future large-scale deployment.
 
 The assessment reviewed SUPC’s conceptual production scenario utilizing approximately 10,000 tonnes of adsorbent operating in continuous 21-day deployment cycles capable of supplying a 1.85 million-pound-U3O8-per-year uranium processing facility.
 
@@ -48,6 +50,6 @@ SuperCritical Materials develops and operates industrial-scale infrastructure to
 
 **Media Contact**
 
-Grant Draper
-[media@supercritical.one](https://www.globenewswire.com/Tracker?data=kPsDj_HYGIkMtXGKgR05ojs1rFKx8Fajlpp1455l5TGR8qNWb_kc_6waI3FKsEJzLjC-kBNkUKN94IzgiMHnNsV5tmu5ioWHt_1eaJBoxcl2f58pC07T__IhGKYBfcCO)
-[www.supercritical.one](https://www.globenewswire.com/Tracker?data=NaHcDeZ9AZgUb9bYpnyY_gU2Bfs8zUuIW_bTDNiha6unljJcHhe23_edHUnZN7jxupC794_kfDWVnlCywiOxIn7740EUbFgB5IWX4TNJWbY=)
+Grant Draper  
+[media@supercritical.one](mailto:media@supercritical.one)  
+[www.supercritical.one](https://supercritical.one/)

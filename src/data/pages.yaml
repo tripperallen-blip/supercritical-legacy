@@ -1,100 +1,89 @@
+# Page copy, verbatim from supercritical.one (crawled Oct 15, 2026)
+
 site:
   name: "SuperCritical Materials"
-  tagline: "A New Era of Metals Powered by Seawater"
-  footer: "© 2026 SuperCritical Materials. All Rights Reserved"
-  formIntro: "Looking for more information? Reach out to our team by completing the form below."
+  defaultTitle: "SuperCritical Materials | A New Era of Metals Powered by Seawater"
+  copyright: "© 2026 SuperCritical Materials. All Rights Reserved"
   nav:
-    - label: "Team"
-      href: "/our-team/"
-      section: "team"
-    - label: "Technology"
-      href: "/technology/"
-      section: "technology"
-    - label: "News"
-      href: "/news/"
-      section: "news"
-    - label: "Contact"
-      href: "/contact-us/"
-      section: "contact"
+    - { label: "Team", href: "/our-team/" }
+    - { label: "Technology", href: "/technology/" }
+    - { label: "News", href: "/news/" }
+    - { label: "Contact", href: "/contact-us/" }
+  contactModal:
+    heading: "Contact Us"
+    intro: "Looking for more information? Reach out to our team by completing the form below."
+    fields: ["Name", "Email Address", "Message"]
+    submit: "Submit"
+
 home:
-  title: "SuperCritical Materials"
-  heroLines:
-    - "BUILDING A NEW CATEGORY OF"
-    - "NUCLEAR FUEL INFRASTRUCTURE"
-  paragraphs:
+  heroVideo: "/assets/VIDEO-2026-01-14-12-30-01.mp4"
+  heroLogo: "/assets/SCT-Logo-Horizontal-500-white.webp"
+  heading: "BUILDING A NEW CATEGORY OF NUCLEAR FUEL INFRASTRUCTURE"
+  heroButtons:
+    - { label: "News", href: "/news/" }
+    - { label: "Contact Us", href: "/contact-us/" }
+  body:
     - "SuperCritical Materials is developing a new source of uranium for the next nuclear age. The world’s oceans contain an estimated 4.5 billion metric tons of dissolved uranium—an enormous, globally distributed resource. SuperCritical is working to transform that resource into a scalable source of nuclear fuel by commercializing uranium-from-seawater technology developed through decades of U.S. government research."
     - "SuperCritical holds an exclusive commercial license to DOE/PNNL-developed uranium adsorbent technology and is advancing the engineering required to deploy, recover and reuse uranium-selective adsorbents in marine environments. The process captures dissolved uranium as seawater passes across the adsorbent; the material is then retrieved, the uranium recovered, and the adsorbent prepared for repeated deployment cycles. The company’s current challenge is demonstrating repeatable, cost-competitive performance on an industrial scale."
     - "Working with leading engineering and research partners, SuperCritical is progressing from laboratory science to offshore systems, pilot deployment, economic validation and ultimately commercial production. Its collaboration with the University of Michigan is developing and testing the mechanical systems needed to deploy and retrieve adsorbent under realistic marine conditions, helping bridge the gap between materials science and industrial-scale offshore operations."
     - "As nuclear energy expands to meet rising demand from AI, data centers, electrification and energy security, SuperCritical is working to expand future uranium availability and strengthen the domestic nuclear fuel supply chain."
     - "For 80 years, the nuclear age has depended on uranium we could find beneath our feet. The next nuclear age may be fueled by what has been around us all along."
-  actions:
-    - label: "News"
-      href: "/news/"
-    - label: "Contact Us"
-      href: "/contact-us/"
+  bodyButtons:
+    - { label: "Our Team", href: "/our-team/" }
+    - { label: "Technology", href: "/technology/" }
+
+team:
+  title: "Our Team | SuperCritical Materials"
+  heading: "Our Team"
+  groups:
+    officers: "Officers & Directors"
+    technical: "Technical Team"
+    advisory: "Advisory Board"
+
 technology:
-  title: "Technology"
+  title: "Technology | SuperCritical Materials"
+  heading: "Technology"
+  subheading: "FROM SEAWATER TO NUCLEAR FUEL"
+  tagline: "Transforming decades of U.S. government research into a new source of uranium"
+  intro:
+    - "The world’s oceans contain an estimated 4.5 billion metric tons of dissolved uranium. SuperCritical Materials is developing the technology and infrastructure to recover this globally distributed resource and expand future nuclear fuel supply."
+    - "SuperCritical holds an exclusive commercial license to DOE/PNNL-developed uranium adsorbent technology. Science has demonstrated that uranium can be captured from seawater and recovered from the adsorbent. SuperCritical is demonstrating a repeatable, cost-competitive system on an industrial scale."
+  howItWorks:
+    heading: "HOW IT WORKS"
+    steps:
+      - { label: "01 — DEPLOY", text: "Uranium-selective adsorbent is deployed in seawater." }
+      - { label: "02 — ADSORB", text: "Dissolved uranium and other metals bind to the adsorbent." }
+      - { label: "03 — RECOVER", text: "The material is retrieved and processed to recover the captured uranium." }
+      - { label: "04 — REUSE", text: "The adsorbent is prepared for another deployment cycle." }
+    outro: "SuperCritical is engineering this deploy–adsorb–recover–reuse process for repeated operation at progressively larger scale."
   sections:
-    - heading: "FROM SEAWATER TO NUCLEAR FUEL"
-      subheading: "Transforming decades of U.S. government research into a new source of uranium"
-      paragraphs:
-        - "The world’s oceans contain an estimated 4.5 billion metric tons of dissolved uranium. SuperCritical Materials is developing the technology and infrastructure to recover this globally distributed resource and expand future nuclear fuel supply."
-        - "SuperCritical holds an exclusive commercial license to DOE/PNNL-developed uranium adsorbent technology. Science has demonstrated that uranium can be captured from seawater and recovered from the adsorbent. SuperCritical is demonstrating a repeatable, cost-competitive system on an industrial scale."
-      steps: []
-    - heading: "HOW IT WORKS"
-      subheading: ""
-      paragraphs:
-        - "**01 — DEPLOY**"
-        - "Uranium-selective adsorbent is deployed in seawater."
-        - "**02 — ADSORB**"
-        - "Dissolved uranium and other metals bind to the adsorbent."
-        - "**03 — RECOVER**"
-        - "The material is retrieved and processed to recover the captured uranium."
-        - "**04 — REUSE**"
-        - "The adsorbent is prepared for another deployment cycle."
-        - "SuperCritical is engineering this deploy–adsorb–recover–reuse process for repeated operation at progressively larger scale."
-      steps: []
     - heading: "FROM MATERIALS SCIENCE TO OFFSHORE SYSTEMS"
-      subheading: ""
-      paragraphs:
+      body:
         - "Commercialization requires systems capable of deploying and retrieving large quantities of adsorbent efficiently in marine environments."
         - "Working with the University of Michigan, SuperCritical is testing adsorbent performance, packing configurations, deployment and retrieval equipment, and hydrodynamics. This work is informing future offshore pilot systems."
-      steps: []
     - heading: "A DIFFERENT APPROACH TO URANIUM SUPPLY"
-      subheading: ""
-      paragraphs:
+      body:
         - "Unlike conventional uranium production, seawater recovery does not depend on locating and developing an ore body. Uranium is continuously present throughout the world’s oceans at a low, relatively consistent concentration."
         - "SuperCritical is developing a reusable recovery system with the potential for a fundamentally different resource footprint. Environmental performance, permitting and economics remain subject to testing and validation."
-      steps: []
     - heading: "PROVING SCALE AND ECONOMICS"
-      subheading: ""
-      paragraphs:
+      body:
         - "The question is no longer simply whether uranium can be recovered from seawater, but whether it can be recovered repeatedly, reliably and economically at industrial scale."
         - "Testing and future offshore pilots will inform economic modeling, feasibility engineering and demonstration-scale system design."
-      steps: []
     - heading: "BUILDING THE FUEL LAYER FOR THE NEXT NUCLEAR AGE"
-      subheading: ""
-      paragraphs:
+      body:
         - "SuperCritical is moving uranium-from-seawater technology from government-developed science toward industrial infrastructure—with the potential to expand uranium supply and strengthen U.S. energy security. Uranium exists. Our job is to engineer a system that can recover it at scale."
-      steps: []
-newsPage:
-  title: "News"
+
+news:
+  title: "News | SuperCritical Materials"
+  heading: "News"
   featuredHeading: "Featured News"
+  pressReleaseLabel: "PRESS RELEASE"
+
 contact:
-  title: "Contact Us"
-  heading: "Get in Touch with SuperCritical Materials"
-  paragraphs:
+  title: "Contact Us | SuperCritical Materials"
+  heading: "Contact Us"
+  subheading: "Get in Touch with SuperCritical Materials"
+  body:
     - "Have questions or want to learn more about how we’re unlocking the ocean’s vast potential to secure critical metals for the future?"
     - "Reach out to us, we would love to hear from you!"
-    - "Name"
-    - "Email Address"
-    - "Message"
-teamPage:
-  title: "Our Team"
-  groups:
-    - id: "officers"
-      heading: "Officers & Directors"
-    - id: "technical"
-      heading: "Technical Team"
-    - id: "advisory"
-      heading: "Advisory Board"
+  formHeading: "Contact Form"

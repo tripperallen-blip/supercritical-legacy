@@ -3,28 +3,35 @@ import Base from '../layouts/Base.astro';
 import { loadPages } from '../lib/content';
 
 const { technology } = loadPages();
-const intro = technology.sections[0]?.paragraphs[0];
 ---
 
-<Base title={technology.title} description={intro} section="technology">
+<Base title={technology.title} description={technology.intro[0]} section="technology">
   <div class="mx-auto grid max-w-3xl gap-12 px-4 py-12">
-    <h1 class="text-4xl">{technology.title}</h1>
+    <header class="grid gap-3">
+      <h1 class="text-4xl">{technology.heading}</h1>
+      <h2 class="text-2xl">{technology.subheading}</h2>
+      <p class="text-lg">{technology.tagline}</p>
+      {technology.intro.map((paragraph) => <p>{paragraph}</p>)}
+    </header>
+    <section class="grid gap-4">
+      <h2 class="text-2xl">{technology.howItWorks.heading}</h2>
+      <ol class="grid gap-4">
+        {
+          technology.howItWorks.steps.map((step) => (
+            <li>
+              <p class="font-medium">{step.label}</p>
+              <p>{step.text}</p>
+            </li>
+          ))
+        }
+      </ol>
+      <p>{technology.howItWorks.outro}</p>
+    </section>
     {
       technology.sections.map((section) => (
         <section class="grid gap-4">
           <h2 class="text-2xl">{section.heading}</h2>
-          {section.subheading ? <p class="text-lg">{section.subheading}</p> : null}
-          {section.steps.length > 0 ? (
-            <ol class="grid gap-4">
-              {section.steps.map((step) => (
-                <li>
-                  <p class="font-medium">{step.label}</p>
-                  <p>{step.body}</p>
-                </li>
-              ))}
-            </ol>
-          ) : null}
-          {section.paragraphs.map((paragraph) => (
+          {section.body.map((paragraph) => (
             <p>{paragraph}</p>
           ))}
         </section>

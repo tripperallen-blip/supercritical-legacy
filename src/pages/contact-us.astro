@@ -6,12 +6,13 @@ import { loadPages } from '../lib/content';
 const { contact, site } = loadPages();
 ---
 
-<Base title={contact.title} description={contact.paragraphs[0]} section="contact">
+<Base title={contact.title} description={contact.body[0]} section="contact">
   <div class="mx-auto grid max-w-xl gap-6 px-4 py-12">
-    <h1 class="text-4xl">{contact.title}</h1>
-    <h2 class="text-2xl">{contact.heading}</h2>
-    {contact.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
-    <p>{site.formIntro}</p>
+    <h1 class="text-4xl">{contact.heading}</h1>
+    <h2 class="text-2xl">{contact.subheading}</h2>
+    {contact.body.map((paragraph) => <p>{paragraph}</p>)}
+    <h2 class="text-xl">{contact.formHeading}</h2>
+    <p>{site.contactModal.intro}</p>
     <ContactForm idPrefix="page" />
   </div>
 </Base>

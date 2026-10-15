@@ -1,153 +1,214 @@
-- group: "officers"
+# SuperCritical Materials — team roster
+# group: officers | technical | advisory
+# order: sort order within the group
+# photo: path under public/
+
+- group: officers
   order: 1
   name: "Canon Bryan"
   title: "Chief Executive Officer and Director"
-  photo: "/assets/team/canon-bryan.jpg"
-  bio:
-    - "Alexander Canon Bryan, age 52, is the Founder and Chief Executive Officer of SuperCritical Technologies, Inc. and serves as a member of the Board of Directors. Mr. Bryan founded the Company in 2024 and has led its strategic development, capital formation initiatives and corporate structuring activities since inception."
-    - "Mr. Bryan has been involved in the formation and financing of multiple energy and resource-focused companies. He was a co-founder of Terrestrial Energy, Inc. (Nasdaq: IMSR), an advanced nuclear technology company, where he previously served as Chief Financial Officer and as a member of the board of directors. During his tenure, Terrestrial Energy raised capital through equity financings, government grants and loan support programs to advance small modular reactor development."
-    - "Mr. Bryan was also a co-founder of Uranium Energy Corp. (NYSE American: UEC), a uranium mining company, and a founder of NioCorp Developments Ltd. (Nasdaq: NB), which is developing the Elk Creek Niobium Project in Nebraska. He is not currently a director or officer of Terrestrial Energy, Uranium Energy Corp. or NioCorp Developments."
-    - "Mr. Bryan is a co-founder of Syntholene and SuperCritical Materials, private companies focused on advanced energy and critical materials technologies. He has served on industry and nonprofit boards, including the Texas Nuclear Alliance and the Canadian Hydrogen Association, and has served on the Board of the United Nations Global Compact."
-- group: "officers"
+  photo: "/assets/team/Canon-Bryan-SuperCritical.jpg"
+  bio: |
+    Alexander Canon Bryan, age 52, is the Founder and Chief Executive Officer of SuperCritical Technologies, Inc. and serves as a member of the Board of Directors. Mr. Bryan founded the Company in 2024 and has led its strategic development, capital formation initiatives and corporate structuring activities since inception.
+
+    Mr. Bryan has been involved in the formation and financing of multiple energy and resource-focused companies. He was a co-founder of Terrestrial Energy, Inc. (Nasdaq: IMSR), an advanced nuclear technology company, where he previously served as Chief Financial Officer and as a member of the board of directors. During his tenure, Terrestrial Energy raised capital through equity financings, government grants and loan support programs to advance small modular reactor development.
+
+    Mr. Bryan was also a co-founder of Uranium Energy Corp. (NYSE American: UEC), a uranium mining company, and a founder of NioCorp Developments Ltd. (Nasdaq: NB), which is developing the Elk Creek Niobium Project in Nebraska. He is not currently a director or officer of Terrestrial Energy, Uranium Energy Corp. or NioCorp Developments.
+
+    Mr. Bryan is a co-founder of Syntholene and SuperCritical Materials, private companies focused on advanced energy and critical materials technologies. He has served on industry and nonprofit boards, including the Texas Nuclear Alliance and the Canadian Hydrogen Association, and has served on the Board of the United Nations Global Compact.
+
+- group: officers
   order: 2
   name: "Neal Froneman"
   title: "Non-Executive Chairman of the Board"
-  photo: "/assets/team/neal-froneman.jpg"
-  bio:
-    - "Neal Froneman, age 65, serves as Non-Executive Chairman of the Board of Directors. Mr. Froneman has over 40 years of experience in the mining and minerals industry."
-    - "Mr. Froneman began his career at Gold Fields Limited and subsequently held operational and leadership roles at Harmony Gold Mining Company Limited and Johannesburg Consolidated Investments (“JCI”). In April 2003, he was appointed Chief Executive Officer of Aflease Gold Limited. Through a series of reverse takeovers and corporate transactions, Aflease Gold evolved into Gold One International Limited in May 2009. During this period, he led strategic restructuring initiatives, including the spin-out of uranium assets to form Uranium One."
-    - "On January 1, 2013, Mr. Froneman was appointed Executive Director and Chief Executive Officer of Sibanye-Stillwater Limited (NYSE: SBSW; JSE: SSW), a multinational mining and metals processing company. During his tenure, Sibanye-Stillwater expanded into a diversified precious metals and critical minerals producer with operations across multiple jurisdictions and completed several strategic acquisitions. Mr. Froneman retired as Chief Executive Officer in September 2025."
-    - "Mr. Froneman has served in various governance roles, including as a member of the Wits Foundation Board of Governors and on the councils of international mining organizations, including the International Council on Mining and Metals and the World Gold Council, where he served as Chairman in 2023."
-- group: "officers"
+  photo: "/assets/team/Neal-Froneman-SuperCritical-Materials-2.jpg"
+  bio: |
+    Neal Froneman, age 65, serves as Non-Executive Chairman of the Board of Directors. Mr. Froneman has over 40 years of experience in the mining and minerals industry.
+
+    Mr. Froneman began his career at Gold Fields Limited and subsequently held operational and leadership roles at Harmony Gold Mining Company Limited and Johannesburg Consolidated Investments (“JCI”). In April 2003, he was appointed Chief Executive Officer of Aflease Gold Limited. Through a series of reverse takeovers and corporate transactions, Aflease Gold evolved into Gold One International Limited in May 2009. During this period, he led strategic restructuring initiatives, including the spin-out of uranium assets to form Uranium One.
+
+    On January 1, 2013, Mr. Froneman was appointed Executive Director and Chief Executive Officer of Sibanye-Stillwater Limited (NYSE: SBSW; JSE: SSW), a multinational mining and metals processing company. During his tenure, Sibanye-Stillwater expanded into a diversified precious metals and critical minerals producer with operations across multiple jurisdictions and completed several strategic acquisitions. Mr. Froneman retired as Chief Executive Officer in September 2025.
+
+    Mr. Froneman has served in various governance roles, including as a member of the Wits Foundation Board of Governors and on the councils of international mining organizations, including the International Council on Mining and Metals and the World Gold Council, where he served as Chairman in 2023.
+
+- group: officers
   order: 3
   name: "Clayton Scott"
   title: "Director"
-  photo: "/assets/team/clayton-scott.jpg"
-  bio:
-    - "Clayton Scott, age 64, serves as a member of the Board of Directors. Mr. Scott has more than 40 years of experience in the global nuclear and energy sectors."
-    - "Mr. Scott was named Chief Commercial Officer of NuScale Power in August 2023 after joining the company in 2022 as Executive Vice President, Business Development. In these roles, he has overseen global business development, sales and strategic initiatives across U.S. and international markets."
-    - "Prior to NuScale, from 2018 to 2021, Mr. Scott served as Senior Vice President – Global Sales and Deputy Director of the Instrumentation and Control Business Unit at Framatome. He previously served as Chief Nuclear Officer for Schneider Electric and as Chief Nuclear Officer of Invensys’ global nuclear business. Earlier in his career, he served as an instrumentation technologist with Ontario Hydro, participating in commissioning and start-up activities at the Pickering Nuclear Power Station."
-    - "Mr. Scott holds a Bachelor of Science degree in Electrical Engineering from the University of California, Irvine."
-- group: "officers"
+  photo: "/assets/team/Clayton-Scott-SuperCritical.jpg"
+  bio: |
+    Clayton Scott, age 64, serves as a member of the Board of Directors. Mr. Scott has more than 40 years of experience in the global nuclear and energy sectors.
+
+    Mr. Scott was named Chief Commercial Officer of NuScale Power in August 2023 after joining the company in 2022 as Executive Vice President, Business Development. In these roles, he has overseen global business development, sales and strategic initiatives across U.S. and international markets.
+
+    Prior to NuScale, from 2018 to 2021, Mr. Scott served as Senior Vice President – Global Sales and Deputy Director of the Instrumentation and Control Business Unit at Framatome. He previously served as Chief Nuclear Officer for Schneider Electric and as Chief Nuclear Officer of Invensys’ global nuclear business. Earlier in his career, he served as an instrumentation technologist with Ontario Hydro, participating in commissioning and start-up activities at the Pickering Nuclear Power Station.
+
+    Mr. Scott holds a Bachelor of Science degree in Electrical Engineering from the University of California, Irvine.
+
+- group: officers
   order: 4
   name: "Paul Mann"
   title: "Director"
-  photo: "/assets/team/paul-mann.jpg"
-  bio:
-    - "Paul E. Mann, age 50, serves as a member of the Board of Directors. Mr. Mann is the co-founder, Chairman and Chief Executive Officer of ASP Isotopes Inc. (Nasdaq: ASPI), a company focused on the development of isotope enrichment technologies for the nuclear medicine, semiconductor and nuclear fuel industries. He is also Chairman of Quantum Leap Energy LLC, a subsidiary of ASP Isotopes focused on nuclear fuel production."
-    - "Prior to founding ASP Isotopes in 2021, Mr. Mann was responsible for healthcare and chemicals investments at DSAM Partners LLC. From 2018 to 2020, he served as Chief Financial Officer of PolarityTE, Inc. (Nasdaq: PTE), a biotechnology company. Earlier in his career, he was a portfolio manager at Highbridge Capital and worked at Soros Fund Management managing investments in healthcare and chemicals companies. He previously spent 11 years as a sell-side equity research analyst at Morgan Stanley and Deutsche Bank."
-    - "Mr. Mann has significant public company board experience. He previously served as a non-executive, independent director of Abeona Therapeutics Inc., where he chaired the audit committee. He currently serves as Chairman of the Board of Healthtech Solution Inc. and serves on its audit committee. He is also Executive Chairman of Skyline Builders Group Limited (Nasdaq: SKBL). In addition, he was co-founder and Chairman of Varian Biopharma, a private biotechnology company, until its sale in 2023."
-    - "Mr. Mann holds an MA (Cantab) and an MEng from the University of Cambridge and is a CFA charterholder."
-- group: "officers"
+  photo: "/assets/team/Paul-Mann-SuperCritical.jpg"
+  bio: |
+    Paul E. Mann, age 50, serves as a member of the Board of Directors. Mr. Mann is the co-founder, Chairman and Chief Executive Officer of ASP Isotopes Inc. (Nasdaq: ASPI), a company focused on the development of isotope enrichment technologies for the nuclear medicine, semiconductor and nuclear fuel industries. He is also Chairman of Quantum Leap Energy LLC, a subsidiary of ASP Isotopes focused on nuclear fuel production.
+
+    Prior to founding ASP Isotopes in 2021, Mr. Mann was responsible for healthcare and chemicals investments at DSAM Partners LLC. From 2018 to 2020, he served as Chief Financial Officer of PolarityTE, Inc. (Nasdaq: PTE), a biotechnology company. Earlier in his career, he was a portfolio manager at Highbridge Capital and worked at Soros Fund Management managing investments in healthcare and chemicals companies. He previously spent 11 years as a sell-side equity research analyst at Morgan Stanley and Deutsche Bank.
+
+    Mr. Mann has significant public company board experience. He previously served as a non-executive, independent director of Abeona Therapeutics Inc., where he chaired the audit committee. He currently serves as Chairman of the Board of Healthtech Solution Inc. and serves on its audit committee. He is also Executive Chairman of Skyline Builders Group Limited (Nasdaq: SKBL). In addition, he was co-founder and Chairman of Varian Biopharma, a private biotechnology company, until its sale in 2023.
+
+    Mr. Mann holds an MA (Cantab) and an MEng from the University of Cambridge and is a CFA charterholder.
+
+- group: officers
   order: 5
   name: "Mitchell P. Goldstein"
   title: "Director"
-  photo: "/assets/team/mitchell-p-goldstein.jpg"
-  bio:
-    - "Mitchell P. Goldstein serves as a member of the Board of Directors and chairs the Audit and Compensation Committees. Mr. Goldstein brings more than three decades of finance, nuclear energy and infrastructure experience to SuperCritical Materials."
-    - "Mr. Goldstein spent most of his career at NextEra Energy and its Florida Power & Light subsidiary, including as Vice President of Finance and Chief Financial Officer for the Nuclear Fleet. In that role, he had financial responsibility for NextEra’s nuclear operations, including FPL’s nuclear generating units, overseeing financial planning, budgeting, and forecasting."
-    - "His experience managing the finances of a major U.S. nuclear fleet brings the Board deep expertise in nuclear infrastructure, financial controls, capital allocation and risk management as SuperCritical advances from engineering through commercial development."
-- group: "officers"
+  photo: "/assets/team/Mitch-SuperCritical-Materials.jpg"
+  bio: |
+    Mitchell P. Goldstein serves as a member of the Board of Directors and chairs the Audit and Compensation Committees. Mr. Goldstein brings more than three decades of finance, nuclear energy and infrastructure experience to SuperCritical Materials.
+
+    Mr. Goldstein spent most of his career at NextEra Energy and its Florida Power & Light subsidiary, including as Vice President of Finance and Chief Financial Officer for the Nuclear Fleet. In that role, he had financial responsibility for NextEra’s nuclear operations, including FPL’s nuclear generating units, overseeing financial planning, budgeting, and forecasting.
+
+    His experience managing the finances of a major U.S. nuclear fleet brings the Board deep expertise in nuclear infrastructure, financial controls, capital allocation and risk management as SuperCritical advances from engineering through commercial development.
+
+- group: officers
   order: 6
   name: "Tunggul Tobing, CPA, CMA"
   title: "CFO"
-  photo: "/assets/team/tunggul-tobing-cpa-cma.jpg"
-  bio:
-    - "Tunggul Tobing is a strategic and operationally minded finance executive with more than 20 years of progressive experience driving financial transformation, overseeing global operations, and ensuring public company compliance within complex, regulated industries. Recognized as a trusted strategic partner, his core strengths include Budgeting, Forecasting, Financial Planning & Analysis (FP&A), International Business Finance (Vale, Rolls-Royce), and Mergers & Acquisitions."
-    - "He possesses in-depth IFRS and Public Company Financial Reporting expertise, as well as comprehensive expertise in PCAOB audit processes gained through his role as an auditee. He excels at translating strategic vision into tangible operational results, demonstrated by his success in cost reduction initiatives and the implementation of shared services models."
-    - "Most recently, as Vice President, Finance at Terrestrial Energy Inc., Tunggul provided strategic and operational leadership and played a key role in the company’s path to becoming publicly traded through a SPAC transaction. He was directly involved in the S-4 filing, due diligence, and investor relations activities. His previous experience includes serving as Finance Director at Rolls-Royce Civil Nuclear Canada, Corporate Controller at Forbes & Manhattan Group (managing TSX reporting), and holding senior financial leadership roles at Vale."
-    - "Tunggul is a CPA/CMA with a strong foundation in audit, is fully bilingual in English and Bahasa Indonesia, and is known for his expertise in building and mentoring high-performing teams."
-- group: "officers"
+  photo: "/assets/team/Tunggul-Tobing-SuperCritical.jpg"
+  bio: |
+    Tunggul Tobing is a strategic and operationally minded finance executive with more than 20 years of progressive experience driving financial transformation, overseeing global operations, and ensuring public company compliance within complex, regulated industries. Recognized as a trusted strategic partner, his core strengths include Budgeting, Forecasting, Financial Planning & Analysis (FP&A), International Business Finance (Vale, Rolls-Royce), and Mergers & Acquisitions.
+
+    He possesses in-depth IFRS and Public Company Financial Reporting expertise, as well as comprehensive expertise in PCAOB audit processes gained through his role as an auditee. He excels at translating strategic vision into tangible operational results, demonstrated by his success in cost reduction initiatives and the implementation of shared services models.
+
+    Most recently, as Vice President, Finance at Terrestrial Energy Inc., Tunggul provided strategic and operational leadership and played a key role in the company’s path to becoming publicly traded through a SPAC transaction. He was directly involved in the S-4 filing, due diligence, and investor relations activities. His previous experience includes serving as Finance Director at Rolls-Royce Civil Nuclear Canada, Corporate Controller at Forbes & Manhattan Group (managing TSX reporting), and holding senior financial leadership roles at Vale.
+
+    Tunggul is a CPA/CMA with a strong foundation in audit, is fully bilingual in English and Bahasa Indonesia, and is known for his expertise in building and mentoring high-performing teams.
+
+- group: officers
   order: 7
   name: "Graham Ballachey, MASc,PEng"
   title: "COO"
-  photo: "/assets/team/graham-ballachey-masc-peng.jpg"
-  bio:
-    - "Graham Ballachey is an engineering and operations leader with more than a decade of experience across advanced energy systems and large-scale industrial development. A professional engineer with a strong foundation in physics, he previously served as Vice President of Engineering at American Lithium Corp."
-    - "While at American Lithium Corp., he led the successful Preliminary Economic Assessment for a major lithium project and contributing to a U.S. Department of Energy grant application seeking $300 million for the TLC Lithium Claystone Project. He is known for his rigorous analytical approach, cross-functional leadership, and ability to deliver complex, mission-critical programs while fostering collaboration and alignment across diverse teams."
-- group: "officers"
+  photo: "/assets/team/Graham-Ballachey.jpg"
+  bio: |
+    Graham Ballachey is an engineering and operations leader with more than a decade of experience across advanced energy systems and large-scale industrial development. A professional engineer with a strong foundation in physics, he previously served as Vice President of Engineering at American Lithium Corp.
+
+    While at American Lithium Corp., he led the successful Preliminary Economic Assessment for a major lithium project and contributing to a U.S. Department of Energy grant application seeking $300 million for the TLC Lithium Claystone Project. He is known for his rigorous analytical approach, cross-functional leadership, and ability to deliver complex, mission-critical programs while fostering collaboration and alignment across diverse teams.
+
+- group: officers
   order: 8
   name: "Wendy Simon-Pearson"
   title: "General Counsel, VP of Legal, and Corporate Secretary"
-  photo: "/assets/team/wendy-simon-pearson.jpg"
-  bio:
-    - "A recognized leader in energy and nuclear law, Wendy brings over a decade of experience negotiating and drafting complex transactions, including Power Purchase Agreements, joint ventures, and regulatory filings before agencies such as FERC, the NRC, and the CFTC. She currently chairs the Board of Directors for Generation Atomic, a non-profit advocating for nuclear power as a carbon free energy resource."
-    - "Prior to her current role, she was a Senior Energy Associate at Eversheds Sutherland, LLP, where she worked on Power Purchase Agreements, carbon credit programs, and energy deals for a range of clients. Earlier in her career, she practiced at McCarter & English, LLP and Morgan, Lewis & Bockius, LLP, and served as General Counsel of Ultra Safe Nuclear Corporation, where she negotiated a joint venture with Canada’s largest nuclear utility."
-    - "Wendy holds a J.D. from The George Washington University Law School, where she was Senior Notes Editor of the George Washington Journal of Energy and Environmental Law and won the Spanogle International Arbitration Competition, and a B.A. magna cum laude in Political Science and Chinese Government & Economic Affairs from the University of Massachusetts Amherst’s Commonwealth Honors College. She is admitted to practice in Washington, D.C. and Washington State, and speaks Mandarin, Chinese. A frequent speaker and author on nuclear and clean energy policy, she has guest lectured at Yale, MIT, NRECA, APPA, and the Association of Corporate Counsel, and has published in outlets including the NRECA Legal Reporting Service and the George Washington Journal of Energy and Environmental Law."
-- group: "officers"
+  photo: "/assets/team/WSP-SuperCritical-Materials.jpg"
+  bio: |
+    A recognized leader in energy and nuclear law, Wendy brings over a decade of experience negotiating and drafting complex transactions, including Power Purchase Agreements, joint ventures, and regulatory filings before agencies such as FERC, the NRC, and the CFTC. She currently chairs the Board of Directors for Generation Atomic, a non-profit advocating for nuclear power as a carbon free energy resource.
+
+    Prior to her current role, she was a Senior Energy Associate at Eversheds Sutherland, LLP, where she worked on Power Purchase Agreements, carbon credit programs, and energy deals for a range of clients. Earlier in her career, she practiced at McCarter & English, LLP and Morgan, Lewis & Bockius, LLP, and served as General Counsel of Ultra Safe Nuclear Corporation, where she negotiated a joint venture with Canada’s largest nuclear utility.
+
+    Wendy holds a J.D. from The George Washington University Law School, where she was Senior Notes Editor of the George Washington Journal of Energy and Environmental Law and won the Spanogle International Arbitration Competition, and a B.A. magna cum laude in Political Science and Chinese Government & Economic Affairs from the University of Massachusetts Amherst’s Commonwealth Honors College. She is admitted to practice in Washington, D.C. and Washington State, and speaks Mandarin, Chinese. A frequent speaker and author on nuclear and clean energy policy, she has guest lectured at Yale, MIT, NRECA, APPA, and the Association of Corporate Counsel, and has published in outlets including the NRECA Legal Reporting Service and the George Washington Journal of Energy and Environmental Law.
+
+- group: officers
   order: 9
   name: "Wenny Handojo"
   title: "VP Finance"
-  photo: "/assets/team/wenny-handojo.jpg"
-  bio:
-    - "Wenny Handojo is Vice President of Finance at SuperCritical Materials, bringing more than two decades of financial management and leadership experience spanning multinational banks and financial institutions."
-    - "Prior to joining SuperCritical Materials, Handojo held a series of increasingly senior finance positions with major international and regional banking organizations. She served as Head of Finance at CIMB Niaga, one of Indonesia’s largest banks, after previously leading its operational accounting function. Earlier in her career, she served as Head of Finance at UOB Indonesia, Head of Financial Reporting at Barclays Indonesia and Head of Finance at ANZ Indonesia. She began her banking career in financial control with ABN AMRO Bank."
-    - "During her tenure at CIMB Niaga, Handojo held additional senior governance responsibilities, including serving as President Director of the CIMB Niaga Pension Fund and President Commissioner of PT Niaga Manajemen Citra. Her experience encompasses financial reporting and controls, accounting, financial planning, governance, risk management and the financial oversight of complex organizations."
-    - "At SuperCritical Materials, Handojo leads the Company’s finance function as it advances the development and commercialization of its nuclear fuel and critical materials platform. Her responsibilities support the Company’s financial planning, reporting, corporate governance and capital discipline as SuperCritical Materials progresses from technology development and engineering validation toward demonstration and potential commercial deployment."
-    - "Handojo holds a degree in Economics and Accounting from Tarumanagara University in Jakarta and has completed the CIMB Niaga Leadership Program at INSEAD. She is also a certified Project Management Professional (PMP)."
-- group: "technical"
+  photo: "/assets/team/Wenny-Handojo-SuperCritical-Materials.jpg"
+  bio: |
+    Wenny Handojo is Vice President of Finance at SuperCritical Materials, bringing more than two decades of financial management and leadership experience spanning multinational banks and financial institutions.
+
+    Prior to joining SuperCritical Materials, Handojo held a series of increasingly senior finance positions with major international and regional banking organizations. She served as Head of Finance at CIMB Niaga, one of Indonesia’s largest banks, after previously leading its operational accounting function. Earlier in her career, she served as Head of Finance at UOB Indonesia, Head of Financial Reporting at Barclays Indonesia and Head of Finance at ANZ Indonesia. She began her banking career in financial control with ABN AMRO Bank.
+
+    During her tenure at CIMB Niaga, Handojo held additional senior governance responsibilities, including serving as President Director of the CIMB Niaga Pension Fund and President Commissioner of PT Niaga Manajemen Citra. Her experience encompasses financial reporting and controls, accounting, financial planning, governance, risk management and the financial oversight of complex organizations.
+
+    At SuperCritical Materials, Handojo leads the Company’s finance function as it advances the development and commercialization of its nuclear fuel and critical materials platform. Her responsibilities support the Company’s financial planning, reporting, corporate governance and capital discipline as SuperCritical Materials progresses from technology development and engineering validation toward demonstration and potential commercial deployment.
+
+    Handojo holds a degree in Economics and Accounting from Tarumanagara University in Jakarta and has completed the CIMB Niaga Leadership Program at INSEAD. She is also a certified Project Management Professional (PMP).
+
+- group: technical
   order: 1
   name: "John Kutsch"
   title: "Process Engineer"
-  photo: "/assets/team/john-kutsch.jpg"
-  bio:
-    - "Mr. Kutsch is President of Whole World LLC, a design engineering company, and Executive Director and President of Thorium Energy Alliance, a 501c3 Research Non-profit. Thorium Energy Alliance is the world leader in promoting industrial material uses for thorium beyond the core use as a fuel."
-    - "Mr. Kutsch has managed green energy research projects for Xcel Energy, in conjunction with NREL. He has led Plant and Equipment Optimization and integration programs for a consortium of ADM, Marathon Oil, North Development’s advanced-design Ethanol facility. The facility successfully integrated discrete systems and new standard operating procedures and new approaches to create the first closed loop, circular, ethanol energy system, greatly increasing operating efficiencies while eliminating nearly all waste streams."
-    - "While performing RD&D functions for Terrestrial Energy, Mr. Kutsch led programs on Molten Salt Nuclear Process Heat, techno-economic analysis of nuclear hydrogen, nuclear liquid fuels, and nuclear heat derived ammonia with Idaho National Laboratory. Mr. Kutsch was lead P.I. for the commercialization study of a sulfur acid hydrogen project with INL, Sandia Labs and Southern Company. He has helped manage nuclear fuel salts characterization studies at Argonne National Laboratory and the University of Wisconsin Madison."
-    - "He was a founder of Terrestrial Energy and developed the Integral Molten Salt Reactor (IMSR) and all supporting facilities designs. This work resulted in 4 patents for Terrestrial Energy, spanning novel pumps, to the first novel salt storage process in over 40 years."
-    - "He assisted in performance modeling of the IMSR and all nuclear island and balance-of-plant systems, including process heat specific applications, as well as defining requirements and properties that all Generation-IV MSR systems must have."
-    - "This Generation-IV definition work was carried on by Thorium Energy Alliance (TEA) as a public service benefiting the field of innovative molten salt reactor technology. TEA has been the main supporter of, and has successfully managed the American Nuclear Society ANS 20.2 Definition Writing Program to define Molten Salt Reactors and their Design and Safety Requirements. The ANS 20.2 draft has been finalized and is in the process of final balloting before being presented to AMSE to be codified into an international standard."
-    - "Mr. Kutsch has worked on critical materials supply chains, advanced nuclear issues and various industrial projects with stakeholders for over 20 years. He believes that industries can work cooperatively to achieve huge gains in efficiency and provide the world with sustainable abundance and prosperity."
-- group: "technical"
+  photo: "/assets/team/John-Kutsch-SuperCritical.jpg"
+  bio: |
+    Mr. Kutsch is President of Whole World LLC, a design engineering company, and Executive Director and President of Thorium Energy Alliance, a 501c3 Research Non-profit. Thorium Energy Alliance is the world leader in promoting industrial material uses for thorium beyond the core use as a fuel.
+
+    Mr. Kutsch has managed green energy research projects for Xcel Energy, in conjunction with NREL. He has led Plant and Equipment Optimization and integration programs for a consortium of ADM, Marathon Oil, North Development’s advanced-design Ethanol facility. The facility successfully integrated discrete systems and new standard operating procedures and new approaches to create the first closed loop, circular, ethanol energy system, greatly increasing operating efficiencies while eliminating nearly all waste streams.
+
+    While performing RD&D functions for Terrestrial Energy, Mr. Kutsch led programs on Molten Salt Nuclear Process Heat, techno-economic analysis of nuclear hydrogen, nuclear liquid fuels, and nuclear heat derived ammonia with Idaho National Laboratory. Mr. Kutsch was lead P.I. for the commercialization study of a sulfur acid hydrogen project with INL, Sandia Labs and Southern Company. He has helped manage nuclear fuel salts characterization studies at Argonne National Laboratory and the University of Wisconsin Madison.
+
+    He was a founder of Terrestrial Energy and developed the Integral Molten Salt Reactor (IMSR) and all supporting facilities designs. This work resulted in 4 patents for Terrestrial Energy, spanning novel pumps, to the first novel salt storage process in over 40 years.
+
+    He assisted in performance modeling of the IMSR and all nuclear island and balance-of-plant systems, including process heat specific applications, as well as defining requirements and properties that all Generation-IV MSR systems must have.
+
+    This Generation-IV definition work was carried on by Thorium Energy Alliance (TEA) as a public service benefiting the field of innovative molten salt reactor technology. TEA has been the main supporter of, and has successfully managed the American Nuclear Society ANS 20.2 Definition Writing Program to define Molten Salt Reactors and their Design and Safety Requirements. The ANS 20.2 draft has been finalized and is in the process of final balloting before being presented to AMSE to be codified into an international standard.
+
+    Mr. Kutsch has worked on critical materials supply chains, advanced nuclear issues and various industrial projects with stakeholders for over 20 years. He believes that industries can work cooperatively to achieve huge gains in efficiency and provide the world with sustainable abundance and prosperity.
+
+- group: technical
   order: 2
   name: "Stephen Boyd, PhD"
   title: "Lead Chemist"
-  photo: "/assets/team/stephen-boyd-phd.jpg"
-  bio:
-    - "Stephen Boyd is a patented researcher with extensive experience in inorganic, solid-state, and nuclear chemistry, and is internationally published among the leading authors in saline, inorganic, and nuclear chemical systems. He has advanced multiple areas of analytical and investigative chemistry."
-    - "He has also completed the development of six chemobiological natural products to TRL-6, demonstrating strong translational research capabilities. Boyd’s technical expertise spans Magic-Angle Spinning MRI, several X-ray diffractometry methods, and advanced extraction, preparative, and solid-state techniques, making him highly skilled in working with inorganic, transition-metal, and transuranic materials."
-- group: "technical"
+  photo: "/assets/team/Stephen-Boyd-SuperCritical.jpg"
+  bio: |
+    Stephen Boyd is a patented researcher with extensive experience in inorganic, solid-state, and nuclear chemistry, and is internationally published among the leading authors in saline, inorganic, and nuclear chemical systems. He has advanced multiple areas of analytical and investigative chemistry.
+
+    He has also completed the development of six chemobiological natural products to TRL-6, demonstrating strong translational research capabilities. Boyd’s technical expertise spans Magic-Angle Spinning MRI, several X-ray diffractometry methods, and advanced extraction, preparative, and solid-state techniques, making him highly skilled in working with inorganic, transition-metal, and transuranic materials.
+
+- group: technical
   order: 3
   name: "Shirly Rodriguez Rojas, PEng"
   title: "VP Nuclear Engineering"
-  photo: "/assets/team/shirly-rodriguez-rojas-peng.jpg"
-  bio:
-    - "Shirly Rodriguez Rojas is a visionary nuclear engineer, innovator, consultant, and public speaker whose passion for nuclear energy was ignited at the age of thirteen in Peru. With both a bachelor’s and master’s degree in nuclear engineering from the University of Florida, she is now at the forefront of nuclear innovation and serves as a Nuclear Science, Engineering, and Technology Advisor for Booz Allen Hamilton at the U.S. Department of Energy’s ARPA-E, leading transformative projects that shape the future of clean energy."
-    - "Her experience as a field engineer and advanced reactor designer blends creative thinking with real-world expertise, driving innovations that push the boundaries of nuclear technology. Shirly’s patents reflect her multidisciplinary approach, fusing technical knowledge with operational skill, all while prioritizing safety, sustainability, and efficiency."
-    - "As an inspiring speaker, advocate, and mentor, Shirly champions the intersection of nuclear technology, innovation, and the empowerment of underrepresented groups, inspiring positive change in the industry. Beyond her professional work, she enjoys traveling, painting, and dancing, always driven by her commitment to leave a lasting global impact and build a more sustainable future."
-- group: "advisory"
+  photo: "/assets/team/Shirly-Rodriguez-Rojas.jpg"
+  bio: |
+    Shirly Rodriguez Rojas is a visionary nuclear engineer, innovator, consultant, and public speaker whose passion for nuclear energy was ignited at the age of thirteen in Peru. With both a bachelor’s and master’s degree in nuclear engineering from the University of Florida, she is now at the forefront of nuclear innovation and serves as a Nuclear Science, Engineering, and Technology Advisor for Booz Allen Hamilton at the U.S. Department of Energy’s ARPA-E, leading transformative projects that shape the future of clean energy.
+
+    Her experience as a field engineer and advanced reactor designer blends creative thinking with real-world expertise, driving innovations that push the boundaries of nuclear technology. Shirly’s patents reflect her multidisciplinary approach, fusing technical knowledge with operational skill, all while prioritizing safety, sustainability, and efficiency.
+
+    As an inspiring speaker, advocate, and mentor, Shirly champions the intersection of nuclear technology, innovation, and the empowerment of underrepresented groups, inspiring positive change in the industry. Beyond her professional work, she enjoys traveling, painting, and dancing, always driven by her commitment to leave a lasting global impact and build a more sustainable future.
+
+- group: advisory
   order: 1
   name: "Gary Gill, PhD"
   title: "Former Deputy Director, Pacific Northwest National Laboratory Marine and Coastal Research Laboratory"
-  photo: "/assets/team/gary-gill-phd.jpg"
-  bio:
-    - "Dr. Gary A. Gill is an environmental chemist and marine scientist with more than 30 years of experience in oceanography, hydrology, contaminant chemistry, and environmental research. He previously served as Deputy Director of the Marine and Coastal Research Laboratory at Pacific Northwest National Laboratory (PNNL), where he helped lead multidisciplinary research focused on coastal and marine systems, environmental remediation, advanced analytical methods, and contaminant behavior."
-    - "Dr. Gill previously served as a Professor of Oceanography at Texas A&M University, where his research advanced the understanding of mercury cycling, estuarine chemistry, seawater geochemistry, and the transport and fate of contaminants in aquatic environments. His interdisciplinary expertise spans oceanography, analytical chemistry, mineralogy, hydrology, and environmental and waste-management science."
-    - "Dr. Gill holds a Ph.D. in Chemical Oceanography from the University of Connecticut and is the author or co-author of more than 100 peer-reviewed scientific publications. His research has contributed to a broad understanding of the chemical processes governing trace metals and other contaminants in marine and freshwater systems."
-    - "Dr. Gill is also a co-inventor of the patented seawater uranium extraction technology developed at Pacific Northwest National Laboratory and exclusively licensed to SuperCritical Technologies. His scientific expertise and research experience provide important technical depth to SuperCritical Materials’ efforts to advance scalable technologies for recovering critical resources from seawater."
-- group: "advisory"
+  photo: "/assets/team/Gary-Gill.jpg"
+  bio: |
+    Dr. Gary A. Gill is an environmental chemist and marine scientist with more than 30 years of experience in oceanography, hydrology, contaminant chemistry, and environmental research. He previously served as Deputy Director of the Marine and Coastal Research Laboratory at Pacific Northwest National Laboratory (PNNL), where he helped lead multidisciplinary research focused on coastal and marine systems, environmental remediation, advanced analytical methods, and contaminant behavior.
+
+    Dr. Gill previously served as a Professor of Oceanography at Texas A&M University, where his research advanced the understanding of mercury cycling, estuarine chemistry, seawater geochemistry, and the transport and fate of contaminants in aquatic environments. His interdisciplinary expertise spans oceanography, analytical chemistry, mineralogy, hydrology, and environmental and waste-management science.
+
+    Dr. Gill holds a Ph.D. in Chemical Oceanography from the University of Connecticut and is the author or co-author of more than 100 peer-reviewed scientific publications. His research has contributed to a broad understanding of the chemical processes governing trace metals and other contaminants in marine and freshwater systems.
+
+    Dr. Gill is also a co-inventor of the patented seawater uranium extraction technology developed at Pacific Northwest National Laboratory and exclusively licensed to SuperCritical Technologies. His scientific expertise and research experience provide important technical depth to SuperCritical Materials’ efforts to advance scalable technologies for recovering critical resources from seawater.
+
+- group: advisory
   order: 2
   name: "Harry Anthony"
   title: "Former COO, Uranium Energy Corp"
-  photo: "/assets/team/harry-anthony.jpg"
-  bio:
-    - "Harry Anthony is a seasoned engineering executive with more than 40 years of experience in uranium production, mine development, and advanced extraction technologies. He spent two decades as a senior officer and director of Uranium Resources Inc. (URI), overseeing mine construction, operations, and wellfield development, along with reserve estimation and key process systems."
-    - "Mr. Anthony has advised major uranium companies and international organizations and is a recognized expert who has presented for the International Atomic Energy Agency. He previously founded Anthony Engineering Services and held multiple leadership roles at URI. He holds Bachelor’s and Master’s degrees in Engineering Mechanics from Penn State."
-- group: "advisory"
+  photo: "/assets/team/Harry-Anthony-SuperCritical.jpg"
+  bio: |
+    Harry Anthony is a seasoned engineering executive with more than 40 years of experience in uranium production, mine development, and advanced extraction technologies. He spent two decades as a senior officer and director of Uranium Resources Inc. (URI), overseeing mine construction, operations, and wellfield development, along with reserve estimation and key process systems.
+
+    Mr. Anthony has advised major uranium companies and international organizations and is a recognized expert who has presented for the International Atomic Energy Agency. He previously founded Anthony Engineering Services and held multiple leadership roles at URI. He holds Bachelor’s and Master’s degrees in Engineering Mechanics from Penn State.
+
+- group: advisory
   order: 3
   name: "Chien Wai"
   title: "Former Professor, University of Idaho"
-  photo: "/assets/team/chien-wai.jpg"
-  bio:
-    - "Dr. Chien M. Wai is a chemist best known for pioneering ligand-assisted supercritical fluid extraction (LASFE), especially using supercritical CO₂ to separate metals—including lanthanides and actinides—for applications in nuclear waste management and materials recovery. A longtime Professor of Chemistry at the University of Idaho, his work helped show that scCO₂ with appropriate complexing ligands can selectively extract radionuclides and other metals from solid and liquid matrices, offering a greener alternative to conventional solvent extraction."
-    - "Beyond academia, Dr. Wai founded LCW Supercritical Technologies (2014) to commercialize supercritical-fluid–based “green” separations for environmental remediation and recycling valuable materials such as rare earths and precious metals from electronic waste. Bibliometric profiles attribute hundreds of publications and sustained impact in supercritical fluids, metal ion chemistry, and extraction science; prior affiliations noted in public profiles include Fudan University and Chung Yuan Christian University."
-- group: "advisory"
+  photo: "/assets/team/Chien-Wai.jpg"
+  bio: |
+    Dr. Chien M. Wai is a chemist best known for pioneering ligand-assisted supercritical fluid extraction (LASFE), especially using supercritical CO₂ to separate metals—including lanthanides and actinides—for applications in nuclear waste management and materials recovery. A longtime Professor of Chemistry at the University of Idaho, his work helped show that scCO₂ with appropriate complexing ligands can selectively extract radionuclides and other metals from solid and liquid matrices, offering a greener alternative to conventional solvent extraction.
+
+    Beyond academia, Dr. Wai founded LCW Supercritical Technologies (2014) to commercialize supercritical-fluid–based “green” separations for environmental remediation and recycling valuable materials such as rare earths and precious metals from electronic waste. Bibliometric profiles attribute hundreds of publications and sustained impact in supercritical fluids, metal ion chemistry, and extraction science; prior affiliations noted in public profiles include Fudan University and Chung Yuan Christian University.
+
+- group: advisory
   order: 4
   name: "Horng-Bin Pan, PhD"
   title: "Technical Advisor | R&D Organic Chemist"
-  photo: "/assets/team/horng-bin-pan-phd.jpg"
-  bio:
-    - "Dr. Horng-Bin Pan is an accomplished research chemist with more than 15 years of experience in organic chemistry, materials science, organic synthesis, advanced separation technologies, and metal-recovery applications. He holds a Ph.D. in Chemistry from the University of Idaho, with expertise in organic chemistry and related materials and separation technologies."
-    - "Dr. Pan was a postdoctoral researcher at the University of Idaho working with Dr. Wai as part of the U.S. Department of Energy–Nuclear Energy (DOE-NE) sponsored Uranium from Seawater Program. His research contributed to the development and evaluation of advanced materials and chemical processes for the recovery of uranium from seawater."
-    - "His technical expertise includes organic chemistry, materials science, organic synthesis, and chromatography. He has also worked extensively in nanomaterials, supercritical fluids, polymer adsorbents, and technologies for sustainable metal recovery and environmental applications."
-    - "Dr. Pan is a co-inventor of the patented seawater uranium extraction technology developed at Pacific Northwest National Laboratory and exclusively licensed to SuperCritical Technologies. He is also the author of 28 peer-reviewed publications and a co-inventor on multiple international patents, reflecting a strong record of research and technological innovation."
+  photo: "/assets/team/Horng-Bin-Pan-SuperCritical.jpg"
+  bio: |
+    Dr. Horng-Bin Pan is an accomplished research chemist with more than 15 years of experience in organic chemistry, materials science, organic synthesis, advanced separation technologies, and metal-recovery applications. He holds a Ph.D. in Chemistry from the University of Idaho, with expertise in organic chemistry and related materials and separation technologies.
+
+    Dr. Pan was a postdoctoral researcher at the University of Idaho working with Dr. Wai as part of the U.S. Department of Energy–Nuclear Energy (DOE-NE) sponsored Uranium from Seawater Program. His research contributed to the development and evaluation of advanced materials and chemical processes for the recovery of uranium from seawater.
+
+    His technical expertise includes organic chemistry, materials science, organic synthesis, and chromatography. He has also worked extensively in nanomaterials, supercritical fluids, polymer adsorbents, and technologies for sustainable metal recovery and environmental applications.
+
+    Dr. Pan is a co-inventor of the patented seawater uranium extraction technology developed at Pacific Northwest National Laboratory and exclusively licensed to SuperCritical Technologies. He is also the author of 28 peer-reviewed publications and a co-inventor on multiple international patents, reflecting a strong record of research and technological innovation.

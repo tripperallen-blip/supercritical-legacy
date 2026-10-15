@@ -6,7 +6,7 @@ dateline: "AUSTIN, Texas – August 5, 2026"
 featured: true
 ---
 
-SuperCritical Materials Corp (“SuperCritical Materials” or “SUPC”), developer of industrial-scale uranium production infrastructure from seawater designed to fuel the Intelligence Economy, today announced the appointment of Neal Froneman as Chairman of the Board of Directors.
+**AUSTIN, Texas – August 5, 2026** – SuperCritical Materials Corp (“SuperCritical Materials” or “SUPC”), developer of industrial-scale uranium production infrastructure from seawater designed to fuel the Intelligence Economy, today announced the appointment of Neal Froneman as Chairman of the Board of Directors.
 
 Mr. Froneman joins SuperCritical Materials as the Company advances engineering and commercial development activities aimed at deploying industrial-scale systems capable of producing uranium feedstock from the world’s oceans.
 
@@ -26,8 +26,6 @@ SuperCritical Materials is pursuing a practical and differentiated approach to e
 
 SuperCritical Materials is developing industrial-scale nuclear fuel production infrastructure. The Company is focused on expanding future fuel availability for the growing global nuclear energy sector and enabling the energy infrastructure required to support the Intelligence Economy. To learn more, please visit: [www.supercritical.one](https://supercritical.one/)
 
-**Media Contact**
-
-Grant Draper
-
+**Media Contact**  
+Grant Draper  
 media@supercritical.one

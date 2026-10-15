@@ -5,7 +5,6 @@ import teamSource from '../data/team.yaml?raw';
 export interface NavItem {
   label: string;
   href: string;
-  section: string;
 }
 
 export interface TeamMember {
@@ -14,47 +13,68 @@ export interface TeamMember {
   name: string;
   title: string;
   photo: string;
-  bio: string[];
-}
-
-export interface TechSection {
-  heading: string;
-  subheading?: string;
-  paragraphs: string[];
-  steps: { label: string; body: string }[];
+  bio: string;
 }
 
 export interface PageData {
   site: {
     name: string;
-    tagline: string;
-    footer: string;
-    formIntro: string;
+    defaultTitle: string;
+    copyright: string;
     nav: NavItem[];
+    contactModal: {
+      heading: string;
+      intro: string;
+      fields: string[];
+      submit: string;
+    };
   };
   home: {
+    heroVideo: string;
+    heroLogo: string;
+    heading: string;
+    heroButtons: { label: string; href: string }[];
+    body: string[];
+    bodyButtons: { label: string; href: string }[];
+  };
+  team: {
     title: string;
-    heroLines: string[];
-    paragraphs: string[];
-    actions: { label: string; href: string }[];
+    heading: string;
+    groups: Record<TeamMember['group'], string>;
   };
   technology: {
     title: string;
-    sections: TechSection[];
+    heading: string;
+    subheading: string;
+    tagline: string;
+    intro: string[];
+    howItWorks: {
+      heading: string;
+      steps: { label: string; text: string }[];
+      outro: string;
+    };
+    sections: { heading: string; body: string[] }[];
   };
-  newsPage: {
+  news: {
     title: string;
+    heading: string;
     featuredHeading: string;
+    pressReleaseLabel: string;
   };
   contact: {
     title: string;
     heading: string;
-    paragraphs: string[];
+    subheading: string;
+    body: string[];
+    formHeading: string;
   };
-  teamPage: {
-    title: string;
-    groups: { id: TeamMember['group']; heading: string }[];
-  };
+}
+
+export function bioParagraphs(bio: string): string[] {
+  return bio
+    .split(/\n\s*\n/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
 }
 
 export function loadPages(): PageData {

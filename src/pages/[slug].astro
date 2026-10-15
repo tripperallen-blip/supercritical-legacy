@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { formatDate, subtitlesOf } from '../lib/content';
+import { formatDate, loadPages, subtitlesOf } from '../lib/content';
 
 export async function getStaticPaths() {
   const posts = await getCollection('news');
@@ -13,12 +13,13 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+const { news } = loadPages();
 const subtitles = subtitlesOf(post.data);
 ---
 
 <Base title={post.data.title} description={subtitles[0] ?? post.data.dateline} section="news">
   <article class="mx-auto grid max-w-3xl gap-4 px-4 py-12">
-    <p class="text-sm uppercase tracking-wide">Press release</p>
+    <p class="text-sm uppercase tracking-wide">{news.pressReleaseLabel}</p>
     <h1 class="text-3xl leading-tight">{post.data.title}</h1>
     {subtitles.map((subtitle) => <p class="text-lg">{subtitle}</p>)}
     <p class="text-sm text-neutral-600">
