@@ -1,0 +1,41 @@
+---
+import MobileMenu from './MobileMenu.astro';
+import type { NavItem } from '../lib/content';
+
+interface Props {
+  nav: NavItem[];
+  section?: string;
+}
+
+const { nav, section = '' } = Astro.props;
+const current = Astro.url.pathname;
+
+function isActive(item: NavItem) {
+  return section === item.section || current === item.href;
+}
+---
+
+<header data-site-header class="relative border-b border-neutral-200 bg-white">
+  <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
+    <a href="/" class="shrink-0">
+      <img src="/assets/brand/logo.png" alt="SuperCritical Materials" class="h-10 w-auto" />
+    </a>
+    <nav class="hidden items-center gap-6 md:flex" aria-label="Primary">
+      {
+        nav.map((item) => (
+          <a
+            href={item.href}
+            aria-current={isActive(item) ? 'page' : undefined}
+            class:list={['text-sm', isActive(item) && 'underline']}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+      <button type="button" data-open-contact class="border border-neutral-900 px-3 py-1 text-sm">
+        Get in touch
+      </button>
+    </nav>
+    <MobileMenu nav={nav} current={current} section={section} />
+  </div>
+</header>

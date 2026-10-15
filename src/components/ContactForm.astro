@@ -1,0 +1,96 @@
+---
+interface Props {
+  idPrefix?: string;
+}
+
+const { idPrefix = 'contact' } = Astro.props;
+---
+
+<form
+  class="grid gap-4"
+  name="contact"
+  method="POST"
+  action="/"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  data-contact-form
+>
+  <input type="hidden" name="form-name" value="contact" />
+  <p class="absolute -left-[9999px] h-px w-px overflow-hidden" aria-hidden="true">
+    <label>
+      Don’t fill this out if you're human
+      <input name="bot-field" tabindex="-1" autocomplete="off" />
+    </label>
+  </p>
+  <label class="grid gap-1 text-sm" for={`${idPrefix}-name`}>
+    Name
+    <input
+      id={`${idPrefix}-name`}
+      name="name"
+      type="text"
+      required
+      autocomplete="name"
+      class="border border-neutral-300 px-3 py-2"
+    />
+  </label>
+  <label class="grid gap-1 text-sm" for={`${idPrefix}-email`}>
+    Email
+    <input
+      id={`${idPrefix}-email`}
+      name="email"
+      type="email"
+      required
+      autocomplete="email"
+      class="border border-neutral-300 px-3 py-2"
+    />
+  </label>
+  <label class="grid gap-1 text-sm" for={`${idPrefix}-message`}>
+    Message
+    <textarea
+      id={`${idPrefix}-message`}
+      name="message"
+      required
+      rows="5"
+      class="border border-neutral-300 px-3 py-2"
+    ></textarea>
+  </label>
+  <button type="submit" class="w-fit border border-neutral-900 px-4 py-2 text-sm">
+    Submit
+  </button>
+  <p data-success hidden class="text-sm">
+    Thank you. We’ve received your message and will get back to you soon.
+  </p>
+  <p data-error hidden class="text-sm">
+    Something went wrong sending your message. Please try again.
+  </p>
+</form>
+
+<script>
+  document.querySelectorAll('[data-contact-form]').forEach((form) => {
+    if (!(form instanceof HTMLFormElement) || form.dataset.bound === 'true') return;
+    form.dataset.bound = 'true';
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const success = form.querySelector('[data-success]');
+      const error = form.querySelector('[data-error]');
+      success?.setAttribute('hidden', '');
+      error?.setAttribute('hidden', '');
+      const body = new URLSearchParams();
+      new FormData(form).forEach((value, key) => {
+        if (typeof value === 'string') body.append(key, value);
+      });
+      try {
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: body.toString(),
+        });
+        if (!response.ok) throw new Error('Request failed');
+        form.reset();
+        success?.removeAttribute('hidden');
+      } catch {
+        error?.removeAttribute('hidden');
+      }
+    });
+  });
+</script>

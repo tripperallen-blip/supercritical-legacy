@@ -1,0 +1,77 @@
+---
+import type { NavItem } from '../lib/content';
+
+interface Props {
+  nav: NavItem[];
+  current: string;
+  section?: string;
+}
+
+const { nav, current, section = '' } = Astro.props;
+
+function isActive(item: NavItem) {
+  return section === item.section || current === item.href;
+}
+---
+
+<button
+  type="button"
+  class="md:hidden"
+  data-menu-button
+  aria-expanded="false"
+  aria-controls="mobile-menu"
+>
+  <span class="sr-only">Open menu</span>
+  <span class="block h-0.5 w-6 bg-neutral-900"></span>
+  <span class="mt-1.5 block h-0.5 w-6 bg-neutral-900"></span>
+  <span class="mt-1.5 block h-0.5 w-6 bg-neutral-900"></span>
+</button>
+<div id="mobile-menu" data-menu-panel hidden class="absolute inset-x-0 top-full border-t border-neutral-200 bg-white md:hidden">
+  <nav class="mx-auto grid max-w-5xl px-4 py-2" aria-label="Mobile">
+    {
+      nav.map((item) => (
+        <a
+          href={item.href}
+          aria-current={isActive(item) ? 'page' : undefined}
+          class:list={['border-b border-neutral-100 py-3 text-sm', isActive(item) && 'underline']}
+        >
+          {item.label}
+        </a>
+      ))
+    }
+    <button type="button" data-open-contact class="py-3 text-left text-sm">
+      Get in touch
+    </button>
+  </nav>
+</div>
+
+<script>
+  const header = document.querySelector('[data-site-header]');
+  const button = document.querySelector('[data-menu-button]');
+  const panel = document.querySelector('[data-menu-panel]');
+
+  if (
+    header instanceof HTMLElement &&
+    button instanceof HTMLButtonElement &&
+    panel instanceof HTMLElement
+  ) {
+    const setOpen = (open: boolean) => {
+      panel.hidden = !open;
+      button.setAttribute('aria-expanded', String(open));
+      const label = button.querySelector('.sr-only');
+      if (label) label.textContent = open ? 'Close menu' : 'Open menu';
+    };
+
+    button.addEventListener('click', () => setOpen(panel.hidden));
+    panel.querySelectorAll('a, [data-open-contact]').forEach((link) => {
+      link.addEventListener('click', () => setOpen(false));
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') setOpen(false);
+    });
+    document.addEventListener('pointerdown', (event) => {
+      if (panel.hidden) return;
+      if (event.target instanceof Node && !header.contains(event.target)) setOpen(false);
+    });
+  }
+</script>

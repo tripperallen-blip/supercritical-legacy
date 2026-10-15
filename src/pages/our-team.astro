@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadPages, loadTeam } from '../lib/content';
+
+const { teamPage } = loadPages();
+const team = loadTeam();
+---
+
+<Base title={teamPage.title} section="team">
+  <div class="mx-auto grid max-w-5xl gap-12 px-4 py-12">
+    <h1 class="text-4xl">{teamPage.title}</h1>
+    {
+      teamPage.groups.map((group) => (
+        <section class="grid gap-6">
+          <h2 class="text-2xl">{group.heading}</h2>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {team
+              .filter((person) => person.group === group.id)
+              .sort((a, b) => a.order - b.order)
+              .map((person) => (
+                <article class="grid content-start gap-3">
+                  <img
+                    src={person.photo}
+                    alt={person.name}
+                    class="aspect-square w-full object-cover"
+                  />
+                  <h3 class="text-lg">{person.name}</h3>
+                  <p class="text-sm text-neutral-600">{person.title}</p>
+                  {person.bio.map((paragraph) => (
+                    <p class="text-sm leading-6">{paragraph}</p>
+                  ))}
+                </article>
+              ))}
+          </div>
+        </section>
+      ))
+    }
+  </div>
+</Base>
