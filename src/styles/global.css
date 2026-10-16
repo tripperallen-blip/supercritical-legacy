@@ -1,25 +1,8 @@
 @import "tailwindcss";
-
-@font-face {
-  font-family: "ibrand";
-  src: url("/assets/extra/2676ibrand.woff2") format("woff2"),
-    url("/assets/extra/2676ibrand.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "ibrand";
-  src: url("/assets/extra/2676ibrand.woff2") format("woff2"),
-    url("/assets/extra/2676ibrand.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+@import "@fontsource/questrial/400.css";
 
 @theme {
-  --font-sans: "ibrand", sans-serif;
+  --font-sans: "Questrial", ui-sans-serif, system-ui, sans-serif;
   --color-ink: #666666;
   --color-ink-strong: #414042;
   --color-accent: #0cb8e8;
@@ -28,7 +11,8 @@
 }
 
 body {
-  font-weight: 300;
+  font-weight: 400;
+  font-synthesis: none;
   font-size: 14px;
   line-height: 1.7;
   color: var(--color-ink);
@@ -38,15 +22,7 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 300;
-}
-
-.fw-500 {
-  font-weight: 500;
-}
-
-.fw-700 {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 summary.bio-toggle {
@@ -81,7 +57,7 @@ summary.bio-toggle::-webkit-details-marker {
 }
 
 .release-body strong {
-  font-weight: 700;
+  font-weight: 400;
   color: #000;
 }
 
@@ -121,7 +97,7 @@ summary.bio-toggle::-webkit-details-marker {
   border-radius: 100px;
   padding: 8px 40px 5px 30px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.7;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -180,7 +156,8 @@ summary.bio-toggle::-webkit-details-marker {
 [data-site-header] nav a {
   padding: 0 11px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   line-height: 1.4;
   text-transform: uppercase;
   color: inherit;

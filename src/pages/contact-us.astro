@@ -10,14 +10,14 @@ const { contact } = loadPages();
 <Base title={contact.title} description={contact.body[0]} section="contact">
   <PageHero title={contact.heading} />
   <div class="mx-auto w-[90%] py-14 min-[981px]:py-20">
-    <h2 class="fw-500 text-[36px] leading-tight text-[#333] min-[981px]:text-[48px]">
+    <h2 class="text-[36px] leading-tight text-[#333] min-[981px]:text-[48px]">
       {contact.subheading}
     </h2>
     <div class="mt-6 grid max-w-[46rem] gap-4 text-[18px] leading-[28px]">
       {contact.body.map((paragraph) => <p>{paragraph}</p>)}
     </div>
     <div class="mt-12 max-w-[640px]">
-      <h2 class="fw-700 mb-6 text-[24px] text-[#333]">{contact.formHeading}</h2>
+      <h2 class="mb-6 text-[24px] text-[#333]">{contact.formHeading}</h2>
       <ContactForm idPrefix="page" />
     </div>
   </div>

@@ -21,13 +21,13 @@ const subtitles = subtitlesOf(post.data);
 <Base title={post.data.title} description={subtitles[0] ?? post.data.dateline} section="news">
   <PageHero />
   <article class="mx-auto grid w-[90%] gap-4 py-14 min-[981px]:py-20">
-    <p class="text-[28px] font-bold leading-tight text-accent min-[981px]:text-[36px]">
+    <p class="text-[28px] leading-tight text-accent min-[981px]:text-[36px]">
       {news.pressReleaseLabel}
     </p>
-    <h1 class="fw-500 text-[36px] leading-tight text-[#333] min-[981px]:text-[48px]">
+    <h1 class="text-[36px] leading-tight text-[#333] min-[981px]:text-[48px]">
       {post.data.title}
     </h1>
-    {subtitles.map((subtitle) => <p class="text-[18px] font-bold leading-snug text-black">{subtitle}</p>)}
+    {subtitles.map((subtitle) => <p class="text-[18px] leading-snug text-black">{subtitle}</p>)}
     {
       post.data.image && (
         <img src={post.data.image} alt="" class="w-full" />
@@ -37,7 +37,7 @@ const subtitles = subtitlesOf(post.data);
       <Content />
     </div>
     <p class="mt-6">
-      <a href="/news/" class="text-[16px] font-bold text-accent">Back to News</a>
+      <a href="/news/" class="text-[16px] text-accent">Back to News</a>
     </p>
   </article>
 </Base>

@@ -44,7 +44,7 @@ function isActive(item: NavItem) {
           href={item.href}
           aria-current={isActive(item) ? 'page' : undefined}
           class:list={[
-            'border-b border-neutral-100 py-3 text-[16px] font-bold uppercase',
+            'border-b border-neutral-100 py-3 text-[16px] uppercase tracking-[0.08em]',
             isActive(item) && 'text-accent',
           ]}
         >

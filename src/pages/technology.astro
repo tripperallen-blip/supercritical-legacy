@@ -9,18 +9,18 @@ const { technology } = loadPages();
 <Base title={technology.title} description={technology.intro[0]} section="technology">
   <PageHero title={technology.heading} />
   <div class="mx-auto grid w-[90%] gap-10 py-14 text-[18px] leading-[28px] min-[981px]:py-20">
-    <h2 class="fw-500 text-[36px] leading-tight text-[#333] min-[981px]:text-[48px]">
+    <h2 class="text-[36px] leading-tight text-[#333] min-[981px]:text-[48px]">
       {technology.subheading}
     </h2>
-    <p class="-mt-6 text-[24px] font-bold leading-snug text-accent">{technology.tagline}</p>
+    <p class="-mt-6 text-[24px] leading-snug text-accent">{technology.tagline}</p>
     {technology.intro.map((paragraph) => <p>{paragraph}</p>)}
     <section class="grid gap-4">
-      <h2 class="fw-700 text-[24px] text-accent">{technology.howItWorks.heading}</h2>
+      <h2 class="text-[24px] text-accent">{technology.howItWorks.heading}</h2>
       <ol class="grid gap-4">
         {
           technology.howItWorks.steps.map((step) => (
             <li>
-              <p class="font-bold text-black">{step.label}</p>
+              <p class="text-black">{step.label}</p>
               <p>{step.text}</p>
             </li>
           ))
@@ -31,7 +31,7 @@ const { technology } = loadPages();
     {
       technology.sections.map((section) => (
         <section class="mt-2 grid gap-4">
-          <h2 class="fw-700 text-[24px] text-accent">{section.heading}</h2>
+          <h2 class="text-[24px] text-accent">{section.heading}</h2>
           {section.body.map((paragraph) => (
             <p>{paragraph}</p>
           ))}

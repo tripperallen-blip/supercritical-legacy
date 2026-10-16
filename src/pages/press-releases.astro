@@ -15,8 +15,8 @@ const posts = (await getCollection('news')).sort(
     {
       posts.map((post) => (
         <article class="mb-10">
-          <p class="text-[15px] font-bold leading-[1.4] text-ink">{formatDate(post.data.date)}</p>
-          <h2 class="fw-700 mt-1 text-[22px] leading-[1.4]">
+          <p class="text-[15px] leading-[1.4] text-ink">{formatDate(post.data.date)}</p>
+          <h2 class="mt-1 text-[22px] leading-[1.4]">
             <a href={`/${post.id}/`} class="text-black hover:text-accent">
               {post.data.title}
             </a>
