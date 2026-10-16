@@ -26,8 +26,8 @@ const meta = description ?? site.defaultTitle;
     <title>{title}</title>
   </head>
   <body>
-    <Header nav={site.nav} section={section} overlay={section === 'home'} />
-    <main class:list={[section !== 'home' && 'pt-[63px]']}>
+    <Header nav={site.nav} section={section} overlay />
+    <main>
       <slot />
     </main>
     <Footer text={site.copyright} />

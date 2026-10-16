@@ -6,7 +6,7 @@
 
 @theme {
   --font-sans: var(--font-test);
-  --color-ink: #666666;
+  --color-ink: #777777;
   --color-ink-strong: #414042;
   --color-accent: #0cb8e8;
   --color-nav-hover: #00ffd7;
@@ -20,8 +20,8 @@ html {
 body {
   font-weight: 300;
   font-synthesis: none;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 15.8px;
+  line-height: 1.52;
   color: var(--color-ink);
   background: #fff;
 }
@@ -30,6 +30,10 @@ h1,
 h2,
 h3 {
   font-weight: 300;
+}
+
+h1.hero-title {
+  font-weight: 700;
 }
 
 strong,
@@ -69,8 +73,8 @@ summary.bio-toggle::-webkit-details-marker {
 }
 
 .release-body {
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 15.8px;
+  line-height: 1.52;
 }
 
 .release-body p {
@@ -118,7 +122,7 @@ summary.bio-toggle::-webkit-details-marker {
   border-radius: 100px;
   padding: 8px 40px 5px 30px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.7;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -130,7 +134,7 @@ summary.bio-toggle::-webkit-details-marker {
   content: "→";
   margin-left: 0.3em;
   letter-spacing: 0;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .btn-light {
@@ -151,13 +155,14 @@ summary.bio-toggle::-webkit-details-marker {
 }
 
 [data-site-header] {
-  height: 63px;
+  height: 73px;
+  padding-top: 10px;
   background: #fff;
   color: #000;
 }
 
 [data-site-header][data-overlay="true"]:not(.is-solid) {
-  height: 83px;
+  height: 93px;
   background: transparent;
   color: #fff;
 }
@@ -174,15 +179,21 @@ summary.bio-toggle::-webkit-details-marker {
   display: block;
 }
 
-[data-site-header] nav a {
+[data-site-header] nav[aria-label='Primary'] a {
   padding: 0 11px;
   font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.08em;
+  font-weight: 700;
+  letter-spacing: normal;
   line-height: 1.4;
   text-transform: uppercase;
   color: inherit;
   transition: color 300ms ease;
+}
+
+[data-site-header] #mobile-menu a {
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.4;
 }
 
 [data-site-header] nav a:hover {
