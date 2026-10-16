@@ -1,5 +1,17 @@
-# - outlet: "Reuters"
-#   logo: "/assets/logos/reuters.png"
-#   title: "Example headline"
-#   date: "2026-01-15"
-#   url: "https://example.com/story"
+# PLACEHOLDER CONTENT — replace before showing the client.
+- outlet: "The Block"
+  title: "Hyperliquid treasury Hyperion triples quarterly profits as HYPE holdings rise in value"
+  date: 2026-08-12
+  url: "https://www.theblock.co/news/markets/2026-08-12-hyperliquid-treasury-hyperion-triples-quarterly-profits-as-hype-holdings-rise-in-value-411652"
+- outlet: "TipRanks / The Fly"
+  title: "Meet Hyperion DeFi: Fly exclusive with CEO Hyunsu Jung"
+  date: 2026-08-01
+  url: "https://www.tipranks.com/news/the-fly/meet-hyperion-defi-fly-exclusive-with-ceo-hyunsu-jung-thefly-news"
+- outlet: "ADVISOR Magazine"
+  title: "Decentralized finance: the hidden layer"
+  date: 2026-07-15
+  url: "https://www.lifehealth.com/decentralized-finance-the-hidden-layer/"
+- outlet: "Placeholder Outlet"
+  title: "Placeholder headline to fill the fourth card"
+  date: 2026-07-01
+  url: "https://example.com"

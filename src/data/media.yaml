@@ -1,7 +1,19 @@
-# - type: video
-#   title: "Example episode title"
-#   show: "Example Show"
-#   date: "2026-01-15"
-#   url: "https://www.youtube.com/watch?v=YOUR_YOUTUBE_ID"
-#   youtubeId: "YOUR_YOUTUBE_ID"
-#   image: "/assets/media/example.jpg"
+# PLACEHOLDER CONTENT — replace before showing the client.
+- type: video
+  title: "Summit panel"
+  show: "Placeholder show name"
+  date: 2026-09-01
+  url: "https://www.youtube.com/watch?v=n_t7kzbSMDw"
+  youtubeId: "n_t7kzbSMDw"
+- type: video
+  title: "CEO interview"
+  show: "Placeholder show name"
+  date: 2026-08-15
+  url: "https://www.youtube.com/watch?v=5iny4VOCU1s"
+  youtubeId: "5iny4VOCU1s"
+- type: video
+  title: "Nasdaq Amplify"
+  show: "Nasdaq"
+  date: 2026-08-01
+  url: "https://www.youtube.com/watch?v=EV6aMzrO9w4"
+  youtubeId: "EV6aMzrO9w4"
