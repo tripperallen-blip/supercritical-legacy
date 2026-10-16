@@ -2,54 +2,103 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
-import { formatDate, loadPages } from '../lib/content';
+import { formatDate, loadCoverage, loadMedia, loadPages, mediaImage, toDate } from '../lib/content';
 
 const { news: newsPage } = loadPages();
-const posts = (await getCollection('news')).sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
-);
-const featured = posts.filter((post) => post.data.featured);
-const rest = posts.filter((post) => !post.data.featured);
+const releases = (await getCollection('news'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+const coverage = loadCoverage().slice(0, 4);
+const media = loadMedia().slice(0, 3);
 ---
 
 <Base title={newsPage.title} section="news">
   <PageHero title={newsPage.heading} />
-  <div class="mx-auto grid w-[90%] gap-12 py-14 min-[981px]:py-20">
-    {
-      featured.length > 0 && (
-        <section>
-          <h2 class="fw-700 mb-8 text-[36px] leading-tight text-ink-strong min-[981px]:text-[44px]">
-            {newsPage.featuredHeading}
-          </h2>
-          {featured.map((post) => (
-            <article class="mb-[50px]">
-              <h3 class="fw-700 mb-[9px] text-[22px] leading-[1.4]">
-                <a href={`/${post.id}/`} class="text-black hover:text-accent">
-                  {post.data.title}
-                </a>
-              </h3>
+  <div class="mx-auto grid w-[90%] gap-20 py-14 min-[981px]:py-20">
+    <section>
+      <h2 class="fw-700 mb-8 text-[36px] leading-tight text-ink-strong min-[981px]:text-[44px]">
+        Press Releases
+      </h2>
+      <div class="grid grid-cols-1 gap-6 min-[981px]:grid-cols-3">
+        {
+          releases.map((post) => (
+            <article class="flex h-full flex-col border border-[#e6e6e6] p-6">
               <p class="text-[15px] font-bold leading-[1.4] text-ink">{formatDate(post.data.date)}</p>
+              <h3 class="fw-700 mt-3 text-[20px] leading-snug text-black">{post.data.title}</h3>
+              <a href={`/${post.id}/`} class="mt-auto pt-6 text-[16px] font-bold text-accent">
+                Read more
+              </a>
             </article>
-          ))}
+          ))
+        }
+      </div>
+      <p class="mt-8">
+        <a href="/press-releases/" class="text-[16px] font-bold text-accent">All Press Releases</a>
+      </p>
+    </section>
+
+    {
+      coverage.length > 0 && (
+        <section class="bg-white">
+          <h2 class="fw-700 mb-8 text-[36px] leading-tight text-ink-strong min-[981px]:text-[44px]">
+            In the News
+          </h2>
+          <div class="grid grid-cols-1 gap-6 min-[700px]:grid-cols-2 min-[981px]:grid-cols-4">
+            {coverage.map((item) => (
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex h-full flex-col border border-[#e6e6e6] p-6 hover:border-accent"
+              >
+                <div class="mb-5 flex h-16 items-center justify-center">
+                  {item.logo ? (
+                    <img src={item.logo} alt={item.outlet} class="max-h-12 w-auto max-w-full object-contain" />
+                  ) : (
+                    <span class="fw-700 text-center text-[18px] leading-tight text-ink-strong">{item.outlet}</span>
+                  )}
+                </div>
+                <h3 class="fw-700 text-[18px] leading-snug text-black">{item.title}</h3>
+                <p class="mt-auto pt-4 text-[15px] font-bold leading-[1.4] text-ink">{formatDate(toDate(item.date))}</p>
+              </a>
+            ))}
+          </div>
         </section>
       )
     }
+
     {
-      rest.length > 0 && (
+      media.length > 0 && (
         <section>
           <h2 class="fw-700 mb-8 text-[36px] leading-tight text-ink-strong min-[981px]:text-[44px]">
-            More news
+            Video & Podcasts
           </h2>
-          {rest.map((post) => (
-            <article class="mb-[50px]">
-              <h3 class="fw-700 mb-[9px] text-[22px] leading-[1.4]">
-                <a href={`/${post.id}/`} class="text-black hover:text-accent">
-                  {post.data.title}
+          <div class="grid grid-cols-1 gap-6 min-[981px]:grid-cols-3">
+            {media.map((item) => {
+              const image = mediaImage(item);
+              return (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group block hover:text-accent"
+                >
+                  <div class="relative aspect-video overflow-hidden bg-[#eee]">
+                    {image && <img src={image} alt="" class="h-full w-full object-cover" />}
+                    {item.type === 'video' && (
+                      <span class="pointer-events-none absolute left-1/2 top-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/85 text-accent">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="ml-0.5 h-4 w-4" aria-hidden="true">
+                          <path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86A1 1 0 0 0 8 5.14Z" />
+                        </svg>
+                      </span>
+                    )}
+                  </div>
+                  <h3 class="fw-700 mt-3 text-[18px] leading-snug text-black group-hover:text-accent">{item.title}</h3>
+                  <p class="mt-1 text-[15px] leading-[1.4] text-ink">{item.show}</p>
                 </a>
-              </h3>
-              <p class="text-[15px] font-bold leading-[1.4] text-ink">{formatDate(post.data.date)}</p>
-            </article>
-          ))}
+              );
+            })}
+          </div>
         </section>
       )
     }

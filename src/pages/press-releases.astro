@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { formatDate } from '../lib/content';
+
+const posts = (await getCollection('news')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<Base title="Press Releases | SuperCritical Materials" section="news">
+  <PageHero title="Press Releases" />
+  <div class="mx-auto w-[90%] py-14 min-[981px]:py-20">
+    {
+      posts.map((post) => (
+        <article class="mb-10">
+          <p class="text-[15px] font-bold leading-[1.4] text-ink">{formatDate(post.data.date)}</p>
+          <h2 class="fw-700 mt-1 text-[22px] leading-[1.4]">
+            <a href={`/${post.id}/`} class="text-black hover:text-accent">
+              {post.data.title}
+            </a>
+          </h2>
+        </article>
+      ))
+    }
+  </div>
+</Base>
