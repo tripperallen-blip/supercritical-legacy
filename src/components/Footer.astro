@@ -6,6 +6,21 @@ interface Props {
 const { text } = Astro.props;
 ---
 
-<footer class="bg-white">
-  <p class="px-[5vw] py-[30px] text-center text-[12px] leading-[2] text-ink-strong">{text}</p>
+<footer class="bg-white px-[5vw] py-[30px]">
+  <div
+    class="flex flex-wrap items-center justify-center gap-x-[225px] gap-y-3 text-center text-[12px] leading-[2] text-ink-strong"
+  >
+    <p>{text}</p>
+    <p class="max-w-full">
+      This site is protected by reCAPTCHA and the Google.
+      <a href="https://policies.google.com/privacy" class="underline" target="_blank" rel="noopener noreferrer">
+        Privacy Policy
+      </a>
+      and
+      <a href="https://policies.google.com/terms" class="underline" target="_blank" rel="noopener noreferrer">
+        Terms of Service
+      </a>
+      apply.
+    </p>
+  </div>
 </footer>
