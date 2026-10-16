@@ -1,13 +1,11 @@
 @import "tailwindcss";
-@import "@fontsource/questrial/400.css";
-@import "@fontsource-variable/montserrat";
 
 :root {
-  --font-test: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-test: "itc-avant-garde-gothic-pro", "TeX Gyre Adventor", sans-serif;
 }
 
 @theme {
-  --font-sans: "Questrial", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-test);
   --color-ink: #666666;
   --color-ink-strong: #414042;
   --color-accent: #0cb8e8;
@@ -15,8 +13,12 @@
   --color-navy: #18232e;
 }
 
+html {
+  font-synthesis: none;
+}
+
 body {
-  font-weight: 400;
+  font-weight: 300;
   font-synthesis: none;
   font-size: 14px;
   line-height: 1.7;
@@ -27,29 +29,21 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: 400;
+  font-weight: 300;
 }
 
-.font-test {
-  font-family: var(--font-test);
-  font-weight: 400;
+strong,
+b,
+.label {
+  font-weight: 700;
+  font-style: normal;
 }
 
-.font-test h1 {
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.font-test h2,
-.font-test h3 {
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
-
-.font-test [data-site-header] nav a,
-.font-test .btn,
-.font-test .btn::after {
-  font-weight: 500;
+em,
+i,
+.release-subtitle {
+  font-style: italic;
+  font-weight: 300;
 }
 
 summary.bio-toggle {
@@ -84,7 +78,7 @@ summary.bio-toggle::-webkit-details-marker {
 }
 
 .release-body strong {
-  font-weight: 400;
+  font-weight: 700;
   color: #000;
 }
 
@@ -124,7 +118,7 @@ summary.bio-toggle::-webkit-details-marker {
   border-radius: 100px;
   padding: 8px 40px 5px 30px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.7;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -136,7 +130,7 @@ summary.bio-toggle::-webkit-details-marker {
   content: "→";
   margin-left: 0.3em;
   letter-spacing: 0;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .btn-light {
@@ -183,7 +177,7 @@ summary.bio-toggle::-webkit-details-marker {
 [data-site-header] nav a {
   padding: 0 11px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.08em;
   line-height: 1.4;
   text-transform: uppercase;

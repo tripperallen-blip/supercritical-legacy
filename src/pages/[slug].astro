@@ -27,7 +27,7 @@ const subtitles = subtitlesOf(post.data);
     <h1 class="text-[36px] leading-tight text-[#333] min-[981px]:text-[48px]">
       {post.data.title}
     </h1>
-    {subtitles.map((subtitle) => <p class="text-[18px] leading-snug text-black">{subtitle}</p>)}
+    {subtitles.map((subtitle) => <p class="release-subtitle text-[18px] leading-snug text-black">{subtitle}</p>)}
     {
       post.data.image && (
         <img src={post.data.image} alt="" class="w-full" />

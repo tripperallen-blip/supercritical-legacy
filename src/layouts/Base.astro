@@ -8,10 +8,9 @@ interface Props {
   title: string;
   description?: string;
   section?: string;
-  class?: string;
 }
 
-const { title, description, section, class: className } = Astro.props;
+const { title, description, section } = Astro.props;
 const { site } = loadPages();
 const meta = description ?? site.defaultTitle;
 ---
@@ -23,9 +22,10 @@ const meta = description ?? site.defaultTitle;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={meta} />
     <link rel="icon" href="/favicon.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/syr2uvt.css" />
     <title>{title}</title>
   </head>
-  <body class={className}>
+  <body>
     <Header nav={site.nav} section={section} overlay={section === 'home'} />
     <main class:list={[section !== 'home' && 'pt-[63px]']}>
       <slot />
