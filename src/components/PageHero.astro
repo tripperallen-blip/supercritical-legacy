@@ -1,0 +1,31 @@
+---
+interface Props {
+  title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<section class="relative flex h-[270px] items-end overflow-hidden bg-neutral-950 min-[981px]:h-[450px]">
+  <video
+    class="absolute inset-0 h-full w-full object-cover"
+    src="/assets/VIDEO-2026-01-14-12-30-01.mp4"
+    autoplay
+    muted
+    loop
+    playsinline
+    aria-hidden="true"
+  ></video>
+  <img
+    src="/assets/extra/video-overlay6.png"
+    alt=""
+    class="pointer-events-none absolute inset-0 h-full w-full object-cover"
+  />
+  {
+    title && (
+      <h1 class="fw-700 relative z-10 w-full px-[5vw] pb-10 text-[60px] leading-none text-white min-[981px]:pb-24 min-[981px]:text-[90px]">
+        {title}
+      </h1>
+    )
+  }
+</section>

@@ -1,7 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { formatDate, loadPages, subtitlesOf } from '../lib/content';
+import PageHero from '../components/PageHero.astro';
+import { loadPages, subtitlesOf } from '../lib/content';
 
 export async function getStaticPaths() {
   const posts = await getCollection('news');
@@ -18,24 +19,25 @@ const subtitles = subtitlesOf(post.data);
 ---
 
 <Base title={post.data.title} description={subtitles[0] ?? post.data.dateline} section="news">
-  <article class="mx-auto grid max-w-3xl gap-4 px-4 py-12">
-    <p class="text-sm uppercase tracking-wide">{news.pressReleaseLabel}</p>
-    <h1 class="text-3xl leading-tight">{post.data.title}</h1>
-    {subtitles.map((subtitle) => <p class="text-lg">{subtitle}</p>)}
-    <p class="text-sm text-neutral-600">
-      <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
-      <span> · {post.data.dateline}</span>
+  <PageHero />
+  <article class="mx-auto grid w-[90%] gap-4 py-14 min-[981px]:py-20">
+    <p class="text-[28px] font-bold leading-tight text-accent min-[981px]:text-[36px]">
+      {news.pressReleaseLabel}
     </p>
+    <h1 class="fw-500 text-[36px] leading-tight text-[#333] min-[981px]:text-[48px]">
+      {post.data.title}
+    </h1>
+    {subtitles.map((subtitle) => <p class="text-[18px] font-bold leading-snug text-black">{subtitle}</p>)}
     {
       post.data.image && (
         <img src={post.data.image} alt="" class="w-full" />
       )
     }
-    <div class="rich-text">
+    <div class="release-body mt-4">
       <Content />
     </div>
-    <p>
-      <a href="/news/" class="text-sm underline">Back to news</a>
+    <p class="mt-6">
+      <a href="/news/" class="text-[16px] font-bold text-accent">Back to News</a>
     </p>
   </article>
 </Base>

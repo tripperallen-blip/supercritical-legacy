@@ -26,36 +26,41 @@ const [nameLabel, emailLabel, messageLabel] = site.contactModal.fields;
       <input name="bot-field" tabindex="-1" autocomplete="off" />
     </label>
   </p>
-  <label class="grid gap-1 text-[16px]" for={`${idPrefix}-name`}>
-    {nameLabel}
-    <input
-      id={`${idPrefix}-name`}
-      name="name"
-      type="text"
-      required
-      autocomplete="name"
-      class="border border-[#e6e6e6] px-3 py-2 text-ink-strong"
-    />
-  </label>
-  <label class="grid gap-1 text-[16px]" for={`${idPrefix}-email`}>
-    {emailLabel}
-    <input
-      id={`${idPrefix}-email`}
-      name="email"
-      type="email"
-      required
-      autocomplete="email"
-      class="border border-[#e6e6e6] px-3 py-2 text-ink-strong"
-    />
-  </label>
+  <div class="grid gap-4 min-[600px]:grid-cols-2">
+    <label class="grid gap-1 text-[16px]" for={`${idPrefix}-name`}>
+      <span class="sr-only">{nameLabel}</span>
+      <input
+        id={`${idPrefix}-name`}
+        name="name"
+        type="text"
+        required
+        autocomplete="name"
+        placeholder={nameLabel}
+        class="w-full bg-[#eee] px-4 py-4 text-[16px] text-ink-strong placeholder:text-[#999]"
+      />
+    </label>
+    <label class="grid gap-1 text-[16px]" for={`${idPrefix}-email`}>
+      <span class="sr-only">{emailLabel}</span>
+      <input
+        id={`${idPrefix}-email`}
+        name="email"
+        type="email"
+        required
+        autocomplete="email"
+        placeholder={emailLabel}
+        class="w-full bg-[#eee] px-4 py-4 text-[16px] text-ink-strong placeholder:text-[#999]"
+      />
+    </label>
+  </div>
   <label class="grid gap-1 text-[16px]" for={`${idPrefix}-message`}>
-    {messageLabel}
+    <span class="sr-only">{messageLabel}</span>
     <textarea
       id={`${idPrefix}-message`}
       name="message"
       required
-      rows="5"
-      class="border border-[#e6e6e6] px-3 py-2 text-ink-strong"
+      rows="6"
+      placeholder={messageLabel}
+      class="w-full bg-[#eee] px-4 py-4 text-[16px] text-ink-strong placeholder:text-[#999]"
     ></textarea>
   </label>
   <button type="submit" class="btn btn-dark w-fit">

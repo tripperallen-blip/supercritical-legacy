@@ -1,7 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { formatDate, loadPages, subtitlesOf } from '../lib/content';
+import PageHero from '../components/PageHero.astro';
+import { formatDate, loadPages } from '../lib/content';
 
 const { news: newsPage } = loadPages();
 const posts = (await getCollection('news')).sort(
@@ -12,23 +13,22 @@ const rest = posts.filter((post) => !post.data.featured);
 ---
 
 <Base title={newsPage.title} section="news">
-  <div class="mx-auto grid max-w-3xl gap-10 px-4 py-12">
-    <h1 class="text-4xl">{newsPage.heading}</h1>
+  <PageHero title={newsPage.heading} />
+  <div class="mx-auto grid w-[90%] gap-12 py-14 min-[981px]:py-20">
     {
       featured.length > 0 && (
-        <section class="grid gap-8">
-          <h2 class="text-2xl">{newsPage.featuredHeading}</h2>
+        <section>
+          <h2 class="fw-700 mb-8 text-[36px] leading-tight text-ink-strong min-[981px]:text-[44px]">
+            {newsPage.featuredHeading}
+          </h2>
           {featured.map((post) => (
-            <article class="grid gap-2">
-              <h3 class="text-xl">
-                <a href={`/${post.id}/`} class="underline">
+            <article class="mb-[50px]">
+              <h3 class="fw-700 mb-[9px] text-[22px] leading-[1.4]">
+                <a href={`/${post.id}/`} class="text-black hover:text-accent">
                   {post.data.title}
                 </a>
               </h3>
-              {subtitlesOf(post.data).map((subtitle) => (
-                <p>{subtitle}</p>
-              ))}
-              <p class="text-sm text-neutral-600">{formatDate(post.data.date)}</p>
+              <p class="text-[15px] font-bold leading-[1.4] text-ink">{formatDate(post.data.date)}</p>
             </article>
           ))}
         </section>
@@ -36,16 +36,18 @@ const rest = posts.filter((post) => !post.data.featured);
     }
     {
       rest.length > 0 && (
-        <section class="grid gap-8">
-          <h2 class="text-2xl">More news</h2>
+        <section>
+          <h2 class="fw-700 mb-8 text-[36px] leading-tight text-ink-strong min-[981px]:text-[44px]">
+            More news
+          </h2>
           {rest.map((post) => (
-            <article class="grid gap-2">
-              <h3 class="text-xl">
-                <a href={`/${post.id}/`} class="underline">
+            <article class="mb-[50px]">
+              <h3 class="fw-700 mb-[9px] text-[22px] leading-[1.4]">
+                <a href={`/${post.id}/`} class="text-black hover:text-accent">
                   {post.data.title}
                 </a>
               </h3>
-              <p class="text-sm text-neutral-600">{formatDate(post.data.date)}</p>
+              <p class="text-[15px] font-bold leading-[1.4] text-ink">{formatDate(post.data.date)}</p>
             </article>
           ))}
         </section>
