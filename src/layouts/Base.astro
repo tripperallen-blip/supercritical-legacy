@@ -8,9 +8,10 @@ interface Props {
   title: string;
   description?: string;
   section?: string;
+  class?: string;
 }
 
-const { title, description, section } = Astro.props;
+const { title, description, section, class: className } = Astro.props;
 const { site } = loadPages();
 const meta = description ?? site.defaultTitle;
 ---
@@ -24,7 +25,7 @@ const meta = description ?? site.defaultTitle;
     <link rel="icon" href="/favicon.png" />
     <title>{title}</title>
   </head>
-  <body>
+  <body class={className}>
     <Header nav={site.nav} section={section} overlay={section === 'home'} />
     <main class:list={[section !== 'home' && 'pt-[63px]']}>
       <slot />

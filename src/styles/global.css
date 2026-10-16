@@ -1,5 +1,10 @@
 @import "tailwindcss";
 @import "@fontsource/questrial/400.css";
+@import "@fontsource-variable/geist";
+
+:root {
+  --font-test: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+}
 
 @theme {
   --font-sans: "Questrial", ui-sans-serif, system-ui, sans-serif;
@@ -23,6 +28,28 @@ h1,
 h2,
 h3 {
   font-weight: 400;
+}
+
+.font-test {
+  font-family: var(--font-test);
+  font-weight: 400;
+}
+
+.font-test h1 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.font-test h2,
+.font-test h3 {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.font-test [data-site-header] nav a,
+.font-test .btn,
+.font-test .btn::after {
+  font-weight: 500;
 }
 
 summary.bio-toggle {
