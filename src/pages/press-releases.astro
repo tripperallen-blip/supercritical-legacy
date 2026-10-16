@@ -11,18 +11,21 @@ const posts = (await getCollection('news')).sort(
 
 <Base title="Press Releases | SuperCritical Materials" section="news">
   <PageHero title="Press Releases" />
-  <div class="mx-auto w-[90%] py-14 min-[981px]:py-20">
-    {
-      posts.map((post) => (
-        <article class="mb-10">
-          <p class="text-[15px] leading-[1.4] text-ink">{formatDate(post.data.date)}</p>
-          <h2 class="mt-1 text-[22px] leading-[1.4]">
-            <a href={`/${post.id}/`} class="text-black hover:text-accent">
-              {post.data.title}
-            </a>
-          </h2>
-        </article>
-      ))
-    }
-  </div>
+  <section class="bg-[#F5F5F7]">
+    <div class="mx-auto w-[90%] py-16 min-[981px]:py-28">
+      <div class="grid grid-cols-1 gap-6 min-[981px]:grid-cols-3">
+        {
+          posts.map((post) => (
+            <article class="flex h-full flex-col border border-ink-strong/25 p-8 transition-[border-color,transform] duration-200 ease-out hover:-translate-y-1 hover:border-ink-strong">
+              <p class="text-[11px] uppercase tracking-[0.16em] text-ink">{formatDate(post.data.date)}</p>
+              <h2 class="mt-4 text-[24px] leading-snug text-ink-strong">{post.data.title}</h2>
+              <a href={`/${post.id}/`} class="mt-auto pt-8 text-[15px] text-ink-strong transition-colors duration-200 ease-out hover:text-black">
+                Read more →
+              </a>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
 </Base>

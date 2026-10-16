@@ -1,19 +1,27 @@
 # PLACEHOLDER CONTENT — replace before showing the client.
 - type: video
-  title: "Summit panel"
-  show: "Placeholder show name"
+  title: "Canon Bryan, Founder & CEO"
+  show: "Fire2Fission - Oct 2026"
+  date: 2026-10-01
+  url: "https://youtu.be/tCT_GHHQRVo?si=Jle5cyRHo9CCwQHk"
+  image: "/assets/media/fire2fission.jpg"
+- type: podcast
+  title: "Canon Bryan, Founder & CEO"
+  show: "Data Centre Uncut - Sep 2026"
   date: 2026-09-01
-  url: "https://www.youtube.com/watch?v=n_t7kzbSMDw"
-  youtubeId: "n_t7kzbSMDw"
+  url: "https://datacentremagazine.com/podcasts/ep-16-why-nuclear-power-could-fuel-the-ai-boom"
+  image: "/assets/media/datacentreuncut.jpg"
 - type: video
-  title: "CEO interview"
-  show: "Placeholder show name"
-  date: 2026-08-15
-  url: "https://www.youtube.com/watch?v=5iny4VOCU1s"
-  youtubeId: "5iny4VOCU1s"
+  title: "Nuclear Roundtable - Canon Bryan, Founder & CEO"
+  show: "Nuclear Investing Podcast - Mar 2026"
+  date: 2026-03-01
+  url: "https://www.youtube.com/watch?v=tNRKmAeqE84"
+  image: "/assets/media/nuclearinvestingpodcast.jpg"
+  youtubeId: "tNRKmAeqE84"
 - type: video
-  title: "Nasdaq Amplify"
-  show: "Nasdaq"
-  date: 2026-08-01
-  url: "https://www.youtube.com/watch?v=EV6aMzrO9w4"
-  youtubeId: "EV6aMzrO9w4"
+  title: "Canon Bryan, CEO & Founder"
+  show: "Nuclear Investing Podcast - Jan 2026"
+  date: 2026-01-01
+  url: "https://www.youtube.com/watch?v=jOYBSnq99MA&feature=youtu.be"
+  image: "/assets/media/nuclearinvestingpodcast2.jpg"
+  youtubeId: "jOYBSnq99MA"

@@ -1,17 +1,60 @@
-# PLACEHOLDER CONTENT — replace before showing the client.
-- outlet: "The Block"
-  title: "Hyperliquid treasury Hyperion triples quarterly profits as HYPE holdings rise in value"
-  date: 2026-08-12
-  url: "https://www.theblock.co/news/markets/2026-08-12-hyperliquid-treasury-hyperion-triples-quarterly-profits-as-hype-holdings-rise-in-value-411652"
-- outlet: "TipRanks / The Fly"
-  title: "Meet Hyperion DeFi: Fly exclusive with CEO Hyunsu Jung"
-  date: 2026-08-01
-  url: "https://www.tipranks.com/news/the-fly/meet-hyperion-defi-fly-exclusive-with-ceo-hyunsu-jung-thefly-news"
-- outlet: "ADVISOR Magazine"
-  title: "Decentralized finance: the hidden layer"
-  date: 2026-07-15
-  url: "https://www.lifehealth.com/decentralized-finance-the-hidden-layer/"
-- outlet: "Placeholder Outlet"
-  title: "Placeholder headline to fill the fourth card"
+- outlet: "Energy Metal News"
+  logo: "/assets/news/energy-metal-news.png"
+  title: "Seawater Uranium Adsorbents Face a Michigan Stress Test"
+  date: 2026-09-25
+  dateLabel: "Sep 25, 2026"
+  url: "https://energymetalnews.com/2026/09/26/seawater-uranium-adsorbents-michigan-stress-test/"
+- outlet: "The Northern Miner"
+  logo: "/assets/news/the-northern-miner.png"
+  title: "SuperCritical Tests Seawater Uranium System"
+  date: 2026-09-01
+  dateLabel: "Sep 2026"
+  url: "https://secure.northernminer.com/subscribe-login/?id=1003895140"
+- outlet: "Discovery Alert"
+  logo: "/assets/news/discovery-alert.png"
+  title: "SuperCritical Partners With Michigan to Test Seawater Uranium at Scale"
+  date: 2026-09-01
+  dateLabel: "Sep 2026"
+  url: "https://discoveryalert.com/news/seawater-uranium-extraction-scale-test-september-2026/"
+- outlet: "Canadian Mining Journal"
+  logo: "/assets/news/canadian-mining-journal.png"
+  title: "SuperCritical, University of Michigan team up on offshore uranium recovery"
+  date: 2026-09-23
+  dateLabel: "Sep 23, 2026"
+  url: "https://www.canadianminingjournal.com/news/supercritical-university-of-michigan-team-up-on-offshore-uranium-recovery/"
+- outlet: "NucNet"
+  logo: "/assets/news/nucnet.png"
+  title: "Independent Review Sees ‘Potential Pathway’ In SUPC Plans To Extract Uranium From Seawater"
+  date: 2026-08-28
+  dateLabel: "Aug 28, 2026"
+  url: "https://www.nucnet.org/news/independent-review-sees-potential-pathway-in-supc-plans-to-extract-uranium-from-seawater-8-5-2026"
+- outlet: "Nuclear Newswire"
+  logo: "/assets/news/nuclear-newswire.png"
+  title: "SuperCritical Materials licenses technology for uranium seawater extraction"
+  date: 2026-07-23
+  dateLabel: "Jul 23, 2026"
+  url: "https://www.ans.org/news/2026-07-23/article-8239/supercritical-materials-licenses-technology-for-uranium-seawater-extraction/"
+- outlet: "Reuters"
+  logo: "/assets/news/reuters.png"
+  title: "US Company Seeks to Produce Uranium for Nuclear Energy from Seawater"
   date: 2026-07-01
-  url: "https://example.com"
+  dateLabel: "Jul 2026"
+  url: "https://www.reuters.com/legal/litigation/us-company-seeks-produce-uranium-nuclear-energy-seawater-2026-07-14/"
+- outlet: "Mining Engineering"
+  logo: "/assets/news/mining-engineering.png"
+  title: "SuperCritical Materials Licenses DOE Technology"
+  date: 2026-07-01
+  dateLabel: "Jul 2026"
+  url: "https://me.smenet.org/supercritical-materials-licenses-us-department-of-energy-patented-uranium-and-critical-materials-extraction-technology/"
+- outlet: "Abundance360"
+  logo: "/assets/news/abundance360.png"
+  title: "Building the Energy Infrastructure for the Next Century"
+  date: 2026-04-01
+  dateLabel: "Apr 2026"
+  url: "https://blog.abundance360.com/canon-bryan"
+- outlet: "The New Money"
+  logo: "/assets/news/the-new-money.png"
+  title: "Frontier Technologies and the Upcoming Energy Supercycle"
+  date: 2026-01-01
+  dateLabel: "Jan 2026"
+  url: "https://www.thenew.money/article/the-canon-bryan-interview-frontier-technologies-and-the-upcoming-energy-supercycle"

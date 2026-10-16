@@ -92,6 +92,7 @@ export interface CoverageItem {
   logo?: string;
   title: string;
   date: string | Date;
+  dateLabel?: string;
   url: string;
 }
 
@@ -119,7 +120,7 @@ function byNewest<T extends { date: string | Date }>(items: T[]): T[] {
 }
 
 export function loadCoverage(): CoverageItem[] {
-  return byNewest(loadYamlList<CoverageItem>(coverageSource));
+  return loadYamlList<CoverageItem>(coverageSource);
 }
 
 export function loadMedia(): MediaItem[] {

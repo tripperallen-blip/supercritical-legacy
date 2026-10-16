@@ -11,8 +11,9 @@ const releases = (await getCollection('news'))
 const coverage = loadCoverage().slice(0, 4);
 const media = loadMedia().slice(0, 3);
 
-const eyebrow = 'mb-3 text-[11px] uppercase tracking-[0.18em] text-accent';
-const title = 'mb-12 text-[36px] leading-tight min-[981px]:mb-16 min-[981px]:text-[44px]';
+const eyebrow = 'mb-3 flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-navy';
+const title = 'mb-8 text-[36px] leading-tight text-[#333333] min-[981px]:mb-12 min-[981px]:text-[44px]';
+const moreLink = 'inline-flex rounded-full bg-accent px-6 py-2.5 text-[16px] text-white transition-colors duration-200 ease-out hover:bg-[#09a6d1]';
 ---
 
 <Base title={newsPage.title} section="news">
@@ -20,8 +21,11 @@ const title = 'mb-12 text-[36px] leading-tight min-[981px]:mb-16 min-[981px]:tex
 
   <section class="bg-[#F5F5F7]">
     <div class="mx-auto w-[90%] py-16 min-[981px]:py-28">
-      <p class="mb-3 text-[11px] uppercase tracking-[0.18em] text-ink-strong">Newsroom</p>
-      <h2 class={`${title} text-ink-strong`}>Press Releases</h2>
+      <p class={eyebrow}>
+        <span class="live-dot" aria-hidden="true"></span>
+        Newsroom
+      </p>
+      <h2 class={title}>Press Releases</h2>
       <div class="grid grid-cols-1 gap-6 min-[981px]:grid-cols-3">
         {
           releases.map((post) => (
@@ -36,7 +40,7 @@ const title = 'mb-12 text-[36px] leading-tight min-[981px]:mb-16 min-[981px]:tex
         }
       </div>
       <p class="mt-12">
-        <a href="/press-releases/" class="text-[16px] text-ink-strong transition-colors duration-200 ease-out hover:text-black">All Press Releases</a>
+        <a href="/press-releases/" class={moreLink}>All Press Releases</a>
       </p>
     </div>
   </section>
@@ -45,28 +49,36 @@ const title = 'mb-12 text-[36px] leading-tight min-[981px]:mb-16 min-[981px]:tex
     coverage.length > 0 && (
       <section class="bg-white">
         <div class="mx-auto w-[90%] py-16 min-[981px]:py-28">
-          <p class={eyebrow}>Coverage</p>
-          <h2 class={`${title} text-ink-strong`}>In the News</h2>
+          <p class={eyebrow}>
+            <span class="live-dot" aria-hidden="true"></span>
+            Coverage
+          </p>
+          <h2 class={title}>In the News</h2>
           <div class="grid grid-cols-1 gap-6 min-[700px]:grid-cols-2 min-[981px]:grid-cols-4">
             {coverage.map((item) => (
               <a
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex h-full flex-col border border-[#e6e6e6] p-6 transition-colors duration-200 ease-out hover:border-accent/50"
+                class="flex h-full flex-col border border-[#e6e6e6] transition-colors duration-200 ease-out hover:border-accent/50"
               >
-                <div class="mb-6 flex h-20 items-center justify-center border border-[#e6e6e6] px-4">
+                <div class="flex items-center justify-center px-[30px] pt-[30px] pb-[10px]">
                   {item.logo ? (
-                    <img src={item.logo} alt={item.outlet} class="max-h-12 w-auto max-w-full object-contain" />
+                    <img src={item.logo} alt={item.outlet} class="h-auto w-full object-contain" />
                   ) : (
-                    <span class="text-center text-[16px] leading-tight text-ink-strong">{item.outlet}</span>
+                    <span class="px-6 py-6 text-center text-[16px] leading-tight text-ink-strong">{item.outlet}</span>
                   )}
                 </div>
-                <h3 class="text-[18px] leading-snug text-black">{item.title}</h3>
-                <p class="mt-auto pt-5 text-[13px] uppercase tracking-[0.12em] text-ink">{formatDate(toDate(item.date))}</p>
+                <div class="flex flex-1 flex-col p-6">
+                  <h3 class="text-[18px] leading-snug text-black">{item.title}</h3>
+                  <p class="mt-auto pt-5 text-[13px] uppercase tracking-[0.12em] text-ink">{item.dateLabel ?? formatDate(toDate(item.date))}</p>
+                </div>
               </a>
             ))}
           </div>
+          <p class="mt-12">
+            <a href="/in-the-news/" class={moreLink}>All In the News</a>
+          </p>
         </div>
       </section>
     )
@@ -76,8 +88,11 @@ const title = 'mb-12 text-[36px] leading-tight min-[981px]:mb-16 min-[981px]:tex
     media.length > 0 && (
       <section class="bg-[#F5F5F7]">
         <div class="mx-auto w-[90%] py-16 min-[981px]:py-28">
-          <p class="mb-3 text-[11px] uppercase tracking-[0.18em] text-ink-strong">Media</p>
-          <h2 class={`${title} text-ink-strong`}>Video & Podcasts</h2>
+          <p class={eyebrow}>
+            <span class="live-dot" aria-hidden="true"></span>
+            Media
+          </p>
+          <h2 class={title}>Video & Podcasts</h2>
           <div class="grid grid-cols-1 gap-8 min-[981px]:grid-cols-3">
             {media.map((item) => {
               const image = mediaImage(item);
@@ -105,6 +120,9 @@ const title = 'mb-12 text-[36px] leading-tight min-[981px]:mb-16 min-[981px]:tex
               );
             })}
           </div>
+          <p class="mt-12">
+            <a href="/video-and-podcasts/" class={moreLink}>All Video & Podcasts</a>
+          </p>
         </div>
       </section>
     )

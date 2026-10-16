@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { formatDate, loadCoverage, toDate } from '../lib/content';
+
+const coverage = loadCoverage();
+---
+
+<Base title="In the News | SuperCritical Materials" section="news">
+  <PageHero title="In the News" />
+  <section class="bg-white">
+    <div class="mx-auto w-[90%] py-16 min-[981px]:py-28">
+      <div class="grid grid-cols-1 gap-6 min-[700px]:grid-cols-2 min-[981px]:grid-cols-4">
+        {
+          coverage.map((item) => (
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex h-full flex-col border border-[#e6e6e6] transition-colors duration-200 ease-out hover:border-accent/50"
+            >
+              <div class="flex items-center justify-center px-[30px] pt-[30px] pb-[10px]">
+                {item.logo ? (
+                  <img src={item.logo} alt={item.outlet} class="h-auto w-full object-contain" />
+                ) : (
+                  <span class="px-6 py-6 text-center text-[16px] leading-tight text-ink-strong">{item.outlet}</span>
+                )}
+              </div>
+              <div class="flex flex-1 flex-col p-6">
+                <h2 class="text-[18px] leading-snug text-black">{item.title}</h2>
+                <p class="mt-auto pt-5 text-[13px] uppercase tracking-[0.12em] text-ink">{item.dateLabel ?? formatDate(toDate(item.date))}</p>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Base>

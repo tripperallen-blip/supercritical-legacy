@@ -20,7 +20,7 @@ const subtitles = subtitlesOf(post.data);
 
 <Base title={post.data.title} description={subtitles[0] ?? post.data.dateline} section="news">
   <PageHero />
-  <article class="mx-auto grid w-[90%] gap-4 py-14 min-[981px]:py-20">
+  <article class="mx-auto grid w-[90%] gap-4 py-14 min-[981px]:w-full min-[981px]:px-[150px] min-[981px]:py-20">
     <p class="text-[28px] leading-tight text-accent min-[981px]:text-[36px]">
       {news.pressReleaseLabel}
     </p>

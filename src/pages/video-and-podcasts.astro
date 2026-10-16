@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { loadMedia, mediaImage } from '../lib/content';
+
+const media = loadMedia();
+---
+
+<Base title="Video & Podcasts | SuperCritical Materials" section="news">
+  <PageHero title="Video & Podcasts" />
+  <section class="bg-[#F5F5F7]">
+    <div class="mx-auto w-[90%] py-16 min-[981px]:py-28">
+      <div class="grid grid-cols-1 gap-8 min-[981px]:grid-cols-3">
+        {
+          media.map((item) => {
+            const image = mediaImage(item);
+            return (
+              <a href={item.url} target="_blank" rel="noopener noreferrer" class="group block">
+                <div class="relative aspect-video overflow-hidden bg-black">
+                  {image && (
+                    <img
+                      src={image}
+                      alt=""
+                      class="h-full w-full object-cover brightness-75 transition duration-300 ease-out group-hover:scale-[1.03] group-hover:brightness-100"
+                    />
+                  )}
+                  {item.type === 'video' && (
+                    <span class="pointer-events-none absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white text-ink-strong">
+                      <svg viewBox="0 0 24 24" fill="currentColor" class="ml-0.5 h-4 w-4" aria-hidden="true">
+                        <path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86A1 1 0 0 0 8 5.14Z" />
+                      </svg>
+                    </span>
+                  )}
+                </div>
+                <h2 class="mt-4 text-[18px] leading-snug text-ink-strong transition-colors duration-200 ease-out group-hover:text-black">{item.title}</h2>
+                <p class="mt-1 text-[14px] leading-[1.4] text-ink">{item.show}</p>
+              </a>
+            );
+          })
+        }
+      </div>
+    </div>
+  </section>
+</Base>
