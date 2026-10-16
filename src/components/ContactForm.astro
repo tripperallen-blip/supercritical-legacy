@@ -26,7 +26,7 @@ const [nameLabel, emailLabel, messageLabel] = site.contactModal.fields;
       <input name="bot-field" tabindex="-1" autocomplete="off" />
     </label>
   </p>
-  <label class="grid gap-1 text-sm" for={`${idPrefix}-name`}>
+  <label class="grid gap-1 text-[16px]" for={`${idPrefix}-name`}>
     {nameLabel}
     <input
       id={`${idPrefix}-name`}
@@ -34,10 +34,10 @@ const [nameLabel, emailLabel, messageLabel] = site.contactModal.fields;
       type="text"
       required
       autocomplete="name"
-      class="border border-neutral-300 px-3 py-2"
+      class="border border-[#e6e6e6] px-3 py-2 text-ink-strong"
     />
   </label>
-  <label class="grid gap-1 text-sm" for={`${idPrefix}-email`}>
+  <label class="grid gap-1 text-[16px]" for={`${idPrefix}-email`}>
     {emailLabel}
     <input
       id={`${idPrefix}-email`}
@@ -45,20 +45,20 @@ const [nameLabel, emailLabel, messageLabel] = site.contactModal.fields;
       type="email"
       required
       autocomplete="email"
-      class="border border-neutral-300 px-3 py-2"
+      class="border border-[#e6e6e6] px-3 py-2 text-ink-strong"
     />
   </label>
-  <label class="grid gap-1 text-sm" for={`${idPrefix}-message`}>
+  <label class="grid gap-1 text-[16px]" for={`${idPrefix}-message`}>
     {messageLabel}
     <textarea
       id={`${idPrefix}-message`}
       name="message"
       required
       rows="5"
-      class="border border-neutral-300 px-3 py-2"
+      class="border border-[#e6e6e6] px-3 py-2 text-ink-strong"
     ></textarea>
   </label>
-  <button type="submit" class="w-fit border border-neutral-900 px-4 py-2 text-sm">
+  <button type="submit" class="btn btn-dark w-fit">
     {site.contactModal.submit}
   </button>
   <p data-success hidden class="text-sm">

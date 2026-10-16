@@ -25,9 +25,9 @@ const meta = description ?? site.defaultTitle;
     <link rel="icon" href="/favicon.png" />
     <title>{title}</title>
   </head>
-  <body class="bg-white text-neutral-900">
-    <Header nav={site.nav} section={section} />
-    <main>
+  <body>
+    <Header nav={site.nav} section={section} overlay={section === 'home'} />
+    <main class:list={[section !== 'home' && 'pt-[63px]']}>
       <slot />
     </main>
     <Footer text={site.copyright} />

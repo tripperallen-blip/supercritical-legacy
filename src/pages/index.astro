@@ -4,12 +4,15 @@ import ContactForm from '../components/ContactForm.astro';
 import { loadPages } from '../lib/content';
 
 const { home, site } = loadPages();
+const accent = 'NUCLEAR FUEL INFRASTRUCTURE';
+const lead = home.heading.endsWith(accent) ? home.heading.slice(0, -accent.length).trim() : home.heading;
+const accentLine = home.heading.endsWith(accent) ? accent : '';
 ---
 
 <Base title={site.defaultTitle} description={home.body[0]} section="home">
-  <section class="relative isolate flex min-h-[85vh] items-center overflow-hidden bg-neutral-950 text-white">
+  <section class="relative flex min-h-svh items-end overflow-hidden bg-neutral-950">
     <video
-      class="absolute inset-0 -z-10 h-full w-full object-cover"
+      class="absolute inset-0 h-full w-full object-cover"
       src={home.heroVideo}
       autoplay
       muted
@@ -20,37 +23,59 @@ const { home, site } = loadPages();
     <img
       src="/assets/extra/video-overlay3.png"
       alt=""
-      class="pointer-events-none absolute inset-0 -z-10 h-full w-full object-cover"
+      class="pointer-events-none absolute inset-0 h-full w-full object-cover"
     />
-    <div class="mx-auto grid w-full max-w-5xl gap-6 px-4 py-16">
-      <img src={home.heroLogo} alt="" class="h-14 w-auto md:h-20" />
-      <h1 class="max-w-3xl text-4xl leading-tight md:text-5xl">{home.heading}</h1>
-      <div class="flex flex-wrap gap-3">
+    <div class="relative z-10 w-full px-[11vw] pb-[16vh] min-[981px]:px-[10vw]">
+      <img src={home.heroLogo} alt="" class="mb-4 h-[57px] w-auto min-[981px]:mb-6 min-[981px]:h-[99px]" />
+      <h1 class="max-w-[12em] text-[6.5vw] leading-none text-white min-[768px]:max-[980px]:text-[45px] min-[981px]:max-w-none min-[981px]:text-[50px]">
+        {lead}
         {
-          home.heroButtons.map((action) => (
-            <a href={action.href} class="border border-white px-4 py-2 text-sm">
-              {action.label}
-            </a>
-          ))
+          accentLine && (
+            <>
+              <br />
+              <span class="text-accent">{accentLine}</span>
+            </>
+          )
         }
+      </h1>
+      <div class="mt-8 flex flex-col items-start gap-5 min-[981px]:mt-7 min-[981px]:flex-row min-[981px]:gap-[15px]">
+        {home.heroButtons.map((action) => (
+          <a href={action.href} class="btn btn-light">{action.label}</a>
+        ))}
       </div>
     </div>
   </section>
-  <section class="mx-auto grid max-w-3xl gap-4 px-4 py-12">
-    {home.body.map((paragraph) => <p>{paragraph}</p>)}
-    <div class="flex flex-wrap gap-3 pt-2">
-      {
-        home.bodyButtons.map((action) => (
-          <a href={action.href} class="border border-neutral-900 px-4 py-2 text-sm">
-            {action.label}
-          </a>
-        ))
-      }
+  <section class="relative overflow-hidden bg-white">
+    <div class="pointer-events-none absolute inset-y-0 right-0 hidden w-[56%] min-[981px]:block">
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('/assets/extra/about-us-1.jpg')"
+      >
+      </div>
+      <div
+        class="absolute inset-0 bg-cover bg-[position:left_center]"
+        style="background-image: url('/assets/extra/about-us-overlay-white.png')"
+      >
+      </div>
+    </div>
+    <div
+      class="relative bg-[url('/assets/extra/about-us-overlay-white4.png')] bg-cover bg-[center_top] px-[5vw] pt-[220px] pb-[50px] min-[981px]:w-[52%] min-[981px]:bg-none min-[981px]:py-[100px]"
+    >
+      <div class="max-w-[38rem]">
+        {home.body.map((paragraph) => <p class="mb-4 text-[16px] leading-[1.5] text-ink">{paragraph}</p>)}
+        <div class="mt-6 flex flex-col items-center gap-5 min-[981px]:mt-8 min-[981px]:flex-row min-[981px]:items-start min-[981px]:gap-5">
+          {home.bodyButtons.map((action) => (
+            <a href={action.href} class="btn btn-dark">{action.label}</a>
+          ))}
+        </div>
+      </div>
     </div>
   </section>
-  <section class="mx-auto grid max-w-xl gap-4 px-4 pb-16">
-    <h2 class="text-xl">{site.contactModal.heading}</h2>
-    <p>{site.contactModal.intro}</p>
-    <ContactForm idPrefix="home" />
+  <section class="bg-white px-[5vw] py-16">
+    <div class="mx-auto grid max-w-xl gap-4">
+      <h2 class="text-[28px] text-ink-strong">{site.contactModal.heading}</h2>
+      <p class="text-[16px] leading-[1.7]">{site.contactModal.intro}</p>
+      <ContactForm idPrefix="home" />
+    </div>
   </section>
 </Base>

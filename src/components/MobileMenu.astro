@@ -21,24 +21,32 @@ function isActive(item: NavItem) {
 
 <button
   type="button"
-  class="md:hidden"
+  class="min-[981px]:hidden"
   data-menu-button
   aria-expanded="false"
   aria-controls="mobile-menu"
 >
   <span class="sr-only">Open menu</span>
-  <span class="block h-0.5 w-6 bg-neutral-900"></span>
-  <span class="mt-1.5 block h-0.5 w-6 bg-neutral-900"></span>
-  <span class="mt-1.5 block h-0.5 w-6 bg-neutral-900"></span>
+  <span class="block h-0.5 w-6 bg-current"></span>
+  <span class="mt-1.5 block h-0.5 w-6 bg-current"></span>
+  <span class="mt-1.5 block h-0.5 w-6 bg-current"></span>
 </button>
-<div id="mobile-menu" data-menu-panel hidden class="absolute inset-x-0 top-full border-t border-neutral-200 bg-white md:hidden">
-  <nav class="mx-auto grid max-w-5xl px-4 py-2" aria-label="Mobile">
+<div
+  id="mobile-menu"
+  data-menu-panel
+  hidden
+  class="absolute inset-x-0 top-full border-t border-neutral-200 bg-white text-navy min-[981px]:hidden"
+>
+  <nav class="mx-auto grid w-[90%] py-2" aria-label="Mobile">
     {
       nav.map((item) => (
         <a
           href={item.href}
           aria-current={isActive(item) ? 'page' : undefined}
-          class:list={['border-b border-neutral-100 py-3 text-sm', isActive(item) && 'underline']}
+          class:list={[
+            'border-b border-neutral-100 py-3 text-[16px] font-bold uppercase',
+            isActive(item) && 'text-accent',
+          ]}
         >
           {item.label}
         </a>

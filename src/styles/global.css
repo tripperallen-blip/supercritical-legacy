@@ -1,5 +1,46 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "ibrand";
+  src: url("/assets/extra/2676ibrand.woff2") format("woff2"),
+    url("/assets/extra/2676ibrand.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ibrand";
+  src: url("/assets/extra/2676ibrand.woff2") format("woff2"),
+    url("/assets/extra/2676ibrand.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "ibrand", sans-serif;
+  --color-ink: #666666;
+  --color-ink-strong: #414042;
+  --color-accent: #0cb8e8;
+  --color-nav-hover: #00ffd7;
+  --color-navy: #18232e;
+}
+
+body {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-ink);
+  background: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+
 dialog::backdrop {
   background: rgb(0 0 0 / 0.45);
 }
@@ -16,4 +57,81 @@ dialog::backdrop {
 
 .rich-text a {
   text-decoration: underline;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  border: 3px solid currentColor;
+  border-radius: 100px;
+  padding: 8px 40px 5px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: transparent;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+.btn::after {
+  content: "→";
+  margin-left: 0.3em;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.btn-light {
+  color: #fff;
+}
+
+.btn-light:hover {
+  background: var(--color-accent);
+}
+
+.btn-dark {
+  color: var(--color-ink-strong);
+}
+
+.btn-dark:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+[data-site-header] {
+  height: 63px;
+  background: #fff;
+  color: #000;
+}
+
+[data-site-header][data-overlay="true"]:not(.is-solid) {
+  height: 83px;
+  background: transparent;
+  color: #fff;
+}
+
+[data-site-header] .logo-white {
+  display: none;
+}
+
+[data-site-header][data-overlay="true"]:not(.is-solid) .logo-color {
+  display: none;
+}
+
+[data-site-header][data-overlay="true"]:not(.is-solid) .logo-white {
+  display: block;
+}
+
+[data-site-header] nav a {
+  padding: 0 11px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: inherit;
+  transition: color 300ms ease;
+}
+
+[data-site-header] nav a:hover {
+  color: var(--color-nav-hover);
 }

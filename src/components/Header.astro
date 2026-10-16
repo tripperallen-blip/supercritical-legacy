@@ -5,9 +5,10 @@ import type { NavItem } from '../lib/content';
 interface Props {
   nav: NavItem[];
   section?: string;
+  overlay?: boolean;
 }
 
-const { nav, section = '' } = Astro.props;
+const { nav, section = '', overlay = false } = Astro.props;
 const current = Astro.url.pathname;
 
 function isActive(item: NavItem) {
@@ -20,19 +21,28 @@ function isActive(item: NavItem) {
 }
 ---
 
-<header data-site-header class="relative border-b border-neutral-200 bg-white">
-  <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
+<header
+  data-site-header
+  data-overlay={overlay ? 'true' : 'false'}
+  class="fixed inset-x-0 top-0 z-40 transition-[background-color,height,color] duration-300"
+>
+  <div class="mx-auto flex h-full w-[90%] items-center justify-between">
     <a href="/" class="shrink-0">
-      <img src="/assets/brand/SCT-Logo-Horizontal-1000.webp" alt="SuperCritical Materials" class="h-10 w-auto" />
+      <img
+        src="/assets/brand/SCT-Logo-Horizontal-1000.webp"
+        alt="SuperCritical Materials"
+        class="logo-color h-[43px] w-auto"
+      />
+      <img
+        src="/assets/brand/SCT-Logo-Horizontal-500-white.webp"
+        alt=""
+        class="logo-white h-[43px] w-auto"
+      />
     </a>
-    <nav class="hidden items-center gap-6 md:flex" aria-label="Primary">
+    <nav class="hidden items-center min-[981px]:flex" aria-label="Primary">
       {
         nav.map((item) => (
-          <a
-            href={item.href}
-            aria-current={isActive(item) ? 'page' : undefined}
-            class:list={['text-sm', isActive(item) && 'underline']}
-          >
+          <a href={item.href} aria-current={isActive(item) ? 'page' : undefined}>
             {item.label}
           </a>
         ))
@@ -41,3 +51,12 @@ function isActive(item: NavItem) {
     <MobileMenu nav={nav} current={current} section={section} />
   </div>
 </header>
+
+<script>
+  const header = document.querySelector('[data-site-header]');
+  if (header instanceof HTMLElement && header.dataset.overlay === 'true') {
+    const sync = () => header.classList.toggle('is-solid', window.scrollY > 24);
+    sync();
+    window.addEventListener('scroll', sync, { passive: true });
+  }
+</script>
