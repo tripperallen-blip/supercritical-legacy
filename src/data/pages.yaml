@@ -7,7 +7,7 @@ site:
   nav:
     - { label: "Team", href: "/our-team/" }
     - { label: "Technology", href: "/technology/" }
-    - { label: "News", href: "/news/" }
+    - { label: "Newsroom", href: "/newsroom/" }
     - { label: "Contact", href: "/contact-us/" }
   contactModal:
     heading: "Contact Us"
@@ -20,7 +20,7 @@ home:
   heroLogo: "/assets/brand/SCT-Logo-Horizontal-500-white.webp"
   heading: "BUILDING A NEW CATEGORY OF NUCLEAR FUEL INFRASTRUCTURE"
   heroButtons:
-    - { label: "News", href: "/news/" }
+    - { label: "News", href: "/newsroom/" }
     - { label: "Contact Us", href: "/contact-us/" }
   body:
     - "SuperCritical Materials is developing a new source of uranium for the next nuclear age. The world’s oceans contain an estimated 4.5 billion metric tons of dissolved uranium—an enormous, globally distributed resource. SuperCritical is working to transform that resource into a scalable source of nuclear fuel by commercializing uranium-from-seawater technology developed through decades of U.S. government research."
@@ -74,8 +74,8 @@ technology:
         - "SuperCritical is moving uranium-from-seawater technology from government-developed science toward industrial infrastructure—with the potential to expand uranium supply and strengthen U.S. energy security. Uranium exists. Our job is to engineer a system that can recover it at scale."
 
 news:
-  title: "News | SuperCritical Materials"
-  heading: "News"
+  title: "Newsroom | SuperCritical Materials"
+  heading: "Newsroom"
   featuredHeading: "Featured News"
   pressReleaseLabel: "PRESS RELEASE"
 
