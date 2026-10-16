@@ -11,7 +11,7 @@ const [nameLabel, emailLabel, messageLabel] = site.contactModal.fields;
 ---
 
 <form
-  class="grid gap-4"
+  class="relative grid gap-4"
   name="contact"
   method="POST"
   action="/"
@@ -20,7 +20,7 @@ const [nameLabel, emailLabel, messageLabel] = site.contactModal.fields;
   data-contact-form
 >
   <input type="hidden" name="form-name" value="contact" />
-  <p class="absolute -left-[9999px] h-px w-px overflow-hidden" aria-hidden="true">
+  <p class="honeypot" aria-hidden="true">
     <label>
       Don’t fill this out if you're human
       <input name="bot-field" tabindex="-1" autocomplete="off" />

@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-import ContactForm from '../components/ContactForm.astro';
 import { loadPages } from '../lib/content';
 
 const { home, site } = loadPages();
@@ -69,13 +68,6 @@ const accentLine = home.heading.endsWith(accent) ? accent : '';
           ))}
         </div>
       </div>
-    </div>
-  </section>
-  <section class="bg-white px-[5vw] py-16">
-    <div class="mx-auto grid max-w-xl gap-4">
-      <h2 class="text-[28px] text-ink-strong">{site.contactModal.heading}</h2>
-      <p class="text-[16px] leading-[1.7]">{site.contactModal.intro}</p>
-      <ContactForm idPrefix="home" />
     </div>
   </section>
 </Base>
