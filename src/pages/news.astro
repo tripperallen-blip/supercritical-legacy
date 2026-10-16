@@ -18,17 +18,17 @@ const title = 'fw-700 mb-12 text-[36px] leading-tight min-[981px]:mb-16 min-[981
 <Base title={newsPage.title} section="news">
   <PageHero title={newsPage.heading} />
 
-  <section class="bg-navy text-white">
+  <section class="bg-[#F5F5F7]">
     <div class="mx-auto w-[90%] py-16 min-[981px]:py-28">
-      <p class={eyebrow}>Newsroom</p>
-      <h2 class={`${title} text-white`}>Press Releases</h2>
+      <p class="mb-3 text-[11px] font-bold uppercase tracking-[0.18em] text-ink-strong">Newsroom</p>
+      <h2 class={`${title} text-ink-strong`}>Press Releases</h2>
       <div class="grid grid-cols-1 gap-6 min-[981px]:grid-cols-3">
         {
           releases.map((post) => (
-            <article class="flex h-full flex-col border border-white/20 p-8 transition-[border-color,transform] duration-200 ease-out hover:-translate-y-1 hover:border-accent">
-              <p class="text-[11px] font-bold uppercase tracking-[0.16em] text-white/60">{formatDate(post.data.date)}</p>
-              <h3 class="fw-700 mt-4 text-[24px] leading-snug text-white">{post.data.title}</h3>
-              <a href={`/${post.id}/`} class="mt-auto pt-8 text-[15px] font-bold text-accent">
+            <article class="flex h-full flex-col border border-ink-strong/25 p-8 transition-[border-color,transform] duration-200 ease-out hover:-translate-y-1 hover:border-ink-strong">
+              <p class="text-[11px] font-bold uppercase tracking-[0.16em] text-ink">{formatDate(post.data.date)}</p>
+              <h3 class="fw-700 mt-4 text-[24px] leading-snug text-ink-strong">{post.data.title}</h3>
+              <a href={`/${post.id}/`} class="mt-auto pt-8 text-[15px] font-bold text-ink-strong transition-colors duration-200 ease-out hover:text-black">
                 Read more →
               </a>
             </article>
@@ -36,7 +36,7 @@ const title = 'fw-700 mb-12 text-[36px] leading-tight min-[981px]:mb-16 min-[981
         }
       </div>
       <p class="mt-12">
-        <a href="/press-releases/" class="text-[16px] font-bold text-accent">All Press Releases</a>
+        <a href="/press-releases/" class="text-[16px] font-bold text-ink-strong transition-colors duration-200 ease-out hover:text-black">All Press Releases</a>
       </p>
     </div>
   </section>
@@ -74,10 +74,10 @@ const title = 'fw-700 mb-12 text-[36px] leading-tight min-[981px]:mb-16 min-[981
 
   {
     media.length > 0 && (
-      <section class="bg-navy text-white">
+      <section class="bg-[#F5F5F7]">
         <div class="mx-auto w-[90%] py-16 min-[981px]:py-28">
-          <p class={eyebrow}>Media</p>
-          <h2 class={`${title} text-white`}>Video & Podcasts</h2>
+          <p class="mb-3 text-[11px] font-bold uppercase tracking-[0.18em] text-ink-strong">Media</p>
+          <h2 class={`${title} text-ink-strong`}>Video & Podcasts</h2>
           <div class="grid grid-cols-1 gap-8 min-[981px]:grid-cols-3">
             {media.map((item) => {
               const image = mediaImage(item);
@@ -92,15 +92,15 @@ const title = 'fw-700 mb-12 text-[36px] leading-tight min-[981px]:mb-16 min-[981
                       />
                     )}
                     {item.type === 'video' && (
-                      <span class="pointer-events-none absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-navy">
+                      <span class="pointer-events-none absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white text-ink-strong">
                         <svg viewBox="0 0 24 24" fill="currentColor" class="ml-0.5 h-4 w-4" aria-hidden="true">
                           <path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72l-11-6.86A1 1 0 0 0 8 5.14Z" />
                         </svg>
                       </span>
                     )}
                   </div>
-                  <h3 class="fw-700 mt-4 text-[18px] leading-snug text-white">{item.title}</h3>
-                  <p class="mt-1 text-[14px] leading-[1.4] text-white/60">{item.show}</p>
+                  <h3 class="fw-700 mt-4 text-[18px] leading-snug text-ink-strong transition-colors duration-200 ease-out group-hover:text-black">{item.title}</h3>
+                  <p class="mt-1 text-[14px] leading-[1.4] text-ink">{item.show}</p>
                 </a>
               );
             })}
