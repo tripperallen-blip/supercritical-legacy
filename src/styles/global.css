@@ -1,9 +1,9 @@
 @import "tailwindcss";
 @import "@fontsource/questrial/400.css";
-@import "@fontsource-variable/geist";
+@import "@fontsource-variable/montserrat";
 
 :root {
-  --font-test: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-test: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
 }
 
 @theme {
