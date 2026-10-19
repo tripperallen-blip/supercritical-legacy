@@ -14,9 +14,9 @@ const { technology } = loadPages();
     </h2>
     <p class="label -mt-6 text-[24px] leading-snug text-accent">{technology.tagline}</p>
     {technology.intro.map((paragraph) => <p>{paragraph}</p>)}
-    <section class="grid gap-4">
+    <section class="mt-8 grid min-w-0 gap-4">
       <h2 class="label text-[24px] text-accent">{technology.howItWorks.heading}</h2>
-      <ol class="grid gap-4">
+      <ol class="process-timeline">
         {
           technology.howItWorks.steps.map((step) => (
             <li>
@@ -26,7 +26,23 @@ const { technology } = loadPages();
           ))
         }
       </ol>
-      <p>{technology.howItWorks.outro}</p>
+      <script is:inline>
+        (function () {
+          var timeline = document.querySelector('.process-timeline');
+          if (!timeline || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+          timeline.classList.add('will-animate');
+          var observer = new IntersectionObserver(
+            function (entries) {
+              if (!entries[0].isIntersecting) return;
+              timeline.classList.add('is-in');
+              observer.disconnect();
+            },
+            { threshold: 0.45 },
+          );
+          observer.observe(timeline);
+        })();
+      </script>
+      <p class="mt-8">{technology.howItWorks.outro}</p>
     </section>
     {
       technology.sections.map((section) => (
