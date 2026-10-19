@@ -39,4 +39,10 @@ const { technology } = loadPages();
       ))
     }
   </div>
+  <section class="bg-[#F5F5F7]">
+    <div class="mx-auto grid w-[90%] gap-4 py-14 text-[15.8px] leading-[1.52] min-[981px]:px-[240px] min-[981px]:py-20">
+      <h2 class="text-[24px] uppercase leading-snug text-[#333]">{technology.license.heading}</h2>
+      {technology.license.body.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </section>
 </Base>

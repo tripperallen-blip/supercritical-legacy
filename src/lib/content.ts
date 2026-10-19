@@ -56,6 +56,7 @@ export interface PageData {
       outro: string;
     };
     sections: { heading: string; body: string[] }[];
+    license: { heading: string; body: string[] };
   };
   news: {
     title: string;
