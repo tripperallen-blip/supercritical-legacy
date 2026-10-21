@@ -61,7 +61,6 @@ export interface PageData {
   news: {
     title: string;
     heading: string;
-    featuredHeading: string;
     pressReleaseLabel: string;
   };
   contact: {

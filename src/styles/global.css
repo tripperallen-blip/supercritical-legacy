@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --font-test: "itc-avant-garde-gothic-pro", "TeX Gyre Adventor", sans-serif;
+  --font-brand: "itc-avant-garde-gothic-pro", "TeX Gyre Adventor", sans-serif;
 }
 
 @theme {
-  --font-sans: var(--font-test);
+  --font-sans: var(--font-brand);
   --color-ink: #777777;
   --color-ink-strong: #414042;
   --color-accent: #0cb8e8;
@@ -107,20 +107,6 @@ summary.bio-toggle::-webkit-details-marker {
 
 .release-body a {
   color: var(--color-accent);
-  text-decoration: underline;
-}
-
-.rich-text p {
-  margin: 0 0 1rem;
-}
-
-.rich-text ul {
-  margin: 0 0 1rem;
-  padding-left: 1.25rem;
-  list-style: disc;
-}
-
-.rich-text a {
   text-decoration: underline;
 }
 
