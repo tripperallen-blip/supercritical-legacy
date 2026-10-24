@@ -1,3 +1,9 @@
+- type: podcast
+  title: "The challenge of securing uranium from seawater with Canon Bryan"
+  show: "World Nuclear News"
+  date: 2026-10-22
+  url: "https://www.world-nuclear-news.org/articles/the-challenge-of-securing-uranium-from-seawater---podcast"
+  image: "/assets/media/world-nuclear-news-canon-bryan.jpg"
 - type: video
   title: "Canon Bryan, Founder & CEO"
   show: "Fire2Fission - Oct 2026"
