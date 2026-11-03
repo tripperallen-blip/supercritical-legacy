@@ -97,6 +97,9 @@ const [nameLabel, emailLabel, messageLabel] = site.contactModal.fields;
         if (!response.ok) throw new Error('Request failed');
         form.reset();
         success?.removeAttribute('hidden');
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', { form_name: 'contact' });
+        }
       } catch {
         error?.removeAttribute('hidden');
       }
