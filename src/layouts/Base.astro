@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Analytics from '../components/Analytics.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { loadPages } from '../lib/content';
@@ -24,6 +25,7 @@ const meta = description ?? site.defaultTitle;
     <link rel="icon" href="/favicon.png" />
     <link rel="stylesheet" href="https://use.typekit.net/syr2uvt.css" />
     <title>{title}</title>
+    <Analytics />
   </head>
   <body>
     <Header nav={site.nav} section={section} overlay />

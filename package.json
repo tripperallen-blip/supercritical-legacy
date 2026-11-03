@@ -12,6 +12,7 @@
     "@tailwindcss/vite": "^4.1.16",
     "astro": "^5.15.0",
     "tailwindcss": "^4.1.16",
+    "vanilla-cookieconsent": "^3.2.1",
     "yaml": "^2.8.1"
   }
 }

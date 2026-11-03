@@ -1,0 +1,180 @@
+---
+/**
+ * Analytics.astro — Oxford + Bond standard measurement + consent component
+ *
+ * Drop into src/components/ and render once inside <head> of your base layout:
+ *   <Analytics />
+ *
+ * Set IDs per site in Netlify (Site configuration → Environment variables)
+ * or a local .env file. Leave any ID blank to skip that tool.
+ *   PUBLIC_GA_ID=G-XXXXXXXXXX
+ *   PUBLIC_CLARITY_ID=abcdefghij
+ *   PUBLIC_LINKEDIN_PARTNER_ID=1234567
+ *
+ * Nothing loads in `astro dev` — only in production builds — so your own
+ * local testing never pollutes client data.
+ *
+ * Setup once per project:  npm install vanilla-cookieconsent
+ *
+ * Consent: uses vanilla-cookieconsent v3 (free, MIT, no account needed),
+ * bundled into the site rather than loaded from a CDN.
+ * Tracking scripts are written as type="text/plain" with a data-category,
+ * so the browser ignores them until the visitor accepts that category.
+ * Google Consent Mode v2 signals are also sent, which keeps GA4/Ads happy.
+ *
+ * Add a "Cookie settings" link in the footer so visitors can change their mind:
+ *   <button type="button" data-cc="show-preferencesModal">Cookie settings</button>
+ */
+
+const GA_ID = import.meta.env.PUBLIC_GA_ID;
+const CLARITY_ID = import.meta.env.PUBLIC_CLARITY_ID;
+const LINKEDIN_ID = import.meta.env.PUBLIC_LINKEDIN_PARTNER_ID;
+const isProd = import.meta.env.PROD;
+
+const hasMarketing = Boolean(LINKEDIN_ID);
+---
+
+{isProd && (
+  <>
+    {/* 1. Consent Mode v2 defaults — everything denied until the visitor chooses */}
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+      });
+    </script>
+
+    {/* 2. GA4 — held until "analytics" consent */}
+    {GA_ID && (
+      <>
+        <script
+          type="text/plain"
+          data-category="analytics"
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        ></script>
+        <script type="text/plain" data-category="analytics" define:vars={{ GA_ID }}>
+          gtag('js', new Date());
+          gtag('config', GA_ID);
+        </script>
+      </>
+    )}
+
+    {/* 3. Microsoft Clarity — held until "analytics" consent */}
+    {CLARITY_ID && (
+      <script type="text/plain" data-category="analytics" define:vars={{ CLARITY_ID }}>
+        (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", CLARITY_ID);
+      </script>
+    )}
+
+    {/* 4. LinkedIn Insight Tag — held until "marketing" consent */}
+    {LINKEDIN_ID && (
+      <script type="text/plain" data-category="marketing" define:vars={{ LINKEDIN_ID }}>
+        window._linkedin_partner_id = LINKEDIN_ID;
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(LINKEDIN_ID);
+        (function(l){
+          if(!l){window.lintrk=function(a,b){window.lintrk.q.push([a,b])};window.lintrk.q=[]}
+          var s=document.getElementsByTagName("script")[0];
+          var b=document.createElement("script");
+          b.type="text/javascript";b.async=true;
+          b.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";
+          s.parentNode.insertBefore(b,s);
+        })(window.lintrk);
+      </script>
+    )}
+
+    {/* 5. Cookie banner — bundled from npm (no third-party CDN, so no IP is shared before consent) */}
+    <div id="cc-config" data-has-marketing={hasMarketing ? 'true' : 'false'} hidden></div>
+    <script>
+      import * as CookieConsent from 'vanilla-cookieconsent';
+      import 'vanilla-cookieconsent/dist/cookieconsent.css';
+
+      const hasMarketing =
+        document.getElementById('cc-config')?.dataset.hasMarketing === 'true';
+
+      function syncGoogleConsent() {
+        const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+        const marketing = CookieConsent.acceptedCategory('marketing') ? 'granted' : 'denied';
+        (window as any).gtag('consent', 'update', {
+          analytics_storage: analytics,
+          ad_storage: marketing,
+          ad_user_data: marketing,
+          ad_personalization: marketing
+        });
+      }
+
+      const categories: Record<string, any> = {
+        necessary: { enabled: true, readOnly: true },
+        analytics: {
+          autoClear: { cookies: [{ name: /^_ga/ }, { name: /^_clck/ }, { name: /^_clsk/ }] }
+        }
+      };
+      const sections: any[] = [
+        {
+          title: 'Strictly necessary',
+          description: 'Required for the site to work. These can’t be turned off.',
+          linkedCategory: 'necessary'
+        },
+        {
+          title: 'Analytics',
+          description: 'Helps us understand how visitors use the site so we can improve it. No data is sold.',
+          linkedCategory: 'analytics'
+        }
+      ];
+      if (hasMarketing) {
+        categories.marketing = {};
+        sections.push({
+          title: 'Marketing',
+          description: 'Lets us measure our LinkedIn campaigns and show relevant ads.',
+          linkedCategory: 'marketing'
+        });
+      }
+      sections.push({
+        title: 'More information',
+        description: 'See our <a href="/privacy">privacy policy</a> for details.'
+      });
+
+      CookieConsent.run({
+        guiOptions: {
+          consentModal: { layout: 'box', position: 'bottom left' },
+          preferencesModal: { layout: 'box' }
+        },
+        categories,
+        onConsent: syncGoogleConsent,
+        onChange: syncGoogleConsent,
+        language: {
+          default: 'en',
+          translations: {
+            en: {
+              consentModal: {
+                title: 'We use cookies',
+                description: 'We use analytics cookies to see how the site is used. You can accept, decline, or choose which ones to allow.',
+                acceptAllBtn: 'Accept all',
+                acceptNecessaryBtn: 'Decline',
+                showPreferencesBtn: 'Manage preferences'
+              },
+              preferencesModal: {
+                title: 'Cookie preferences',
+                acceptAllBtn: 'Accept all',
+                acceptNecessaryBtn: 'Decline all',
+                savePreferencesBtn: 'Save preferences',
+                closeIconLabel: 'Close',
+                sections
+              }
+            }
+          }
+        }
+      });
+    </script>
+  </>
+)}
