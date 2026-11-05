@@ -63,7 +63,7 @@ We share personal information only with service providers that help us run the S
 - **Netlify** (website hosting and contact form processing) – [netlify.com/privacy](https://www.netlify.com/privacy/)
 - **Google Analytics** (Site analytics, only with your consent) – [policies.google.com/privacy](https://policies.google.com/privacy)
 - **Google reCAPTCHA** (spam protection on our contact form) – [policies.google.com/privacy](https://policies.google.com/privacy)
-- **Adobe Fonts** (displays the typefaces used on the Site; your browser connects to Adobe's servers, which may receive your IP address) – [adobe.com/privacy](https://www.adobe.com/privacy.html)
+- **Google Fonts** (displays the typeface used on the Site; your browser connects to Google's servers, which may receive your IP address) – [policies.google.com/privacy](https://policies.google.com/privacy)
 - **[Newsletter provider, e.g. Mailchimp]** (newsletter delivery) – [link to provider's privacy policy]
 
 We may also disclose information if required by law or to protect our rights, or as part of a merger, acquisition or sale of assets.

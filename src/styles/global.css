@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --font-brand: "itc-avant-garde-gothic-pro", "TeX Gyre Adventor", sans-serif;
+  --font-brand: "Outfit", sans-serif;
 }
 
 @theme {
@@ -14,12 +14,12 @@
 }
 
 html {
-  font-synthesis: none;
+  font-synthesis: style;
 }
 
 body {
   font-weight: 300;
-  font-synthesis: none;
+  font-synthesis: style;
   font-size: 15.8px;
   line-height: 1.52;
   color: var(--color-ink);
